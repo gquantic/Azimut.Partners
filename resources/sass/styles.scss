@@ -140,3 +140,25 @@ input.form-control {
 thead, tbody, tfoot, tr, td, th {
     border: none !important;
 }
+
+.btn-dark {
+    background-color: $card-body-color !important;
+    border: 2px solid rgb($color-gold, 15%);
+}
+
+.modal-content {
+    background-color: rgba($card-body-color, 50%);
+    backdrop-filter: blur(5px);
+
+    .modal-header, .modal-footer {
+        border-bottom: none;
+        border-top: none;
+    }
+}
+.modal-backdrop {
+    background-color: $color-dark;
+    backdrop-filter: blur(35px);
+}
+.modal-backdrop.show {
+    opacity: .95;
+}

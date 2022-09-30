@@ -3,7 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Offer;
+use Faker\Provider\Address;
 use Illuminate\Database\Seeder;
+use Faker\UniqueGenerator;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +23,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        Offer::factory()
+            ->count(5)
+            ->create();
     }
 }

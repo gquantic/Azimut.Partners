@@ -13,17 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('offers', function (Blueprint $table) {
+        Schema::create('conversions', function (Blueprint $table) {
             $table->id();
-
-            $table->string('title', 255);
-            $table->text('description', 500)->nullable();
-
-            $table->integer('award')->default(10);
-            $table->integer('percent_award')->default(3);
-
-            $table->text('conditions')->nullable();
-
+            $table->foreignId('offer_id')->constrained('offers');
+            $table->foreignId('user_id')->constrained('users');
+            $table->bigInteger('price');
+            $table->string('source', 355)->nullable();
+            $table->string('status')->default('new');
+            $table->json('more');
             $table->timestamps();
         });
     }
@@ -35,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('offers');
+        Schema::dropIfExists('conversions');
     }
 };

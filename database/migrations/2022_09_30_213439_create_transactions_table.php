@@ -13,17 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('offers', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-
-            $table->string('title', 255);
-            $table->text('description', 500)->nullable();
-
-            $table->integer('award')->default(10);
-            $table->integer('percent_award')->default(3);
-
-            $table->text('conditions')->nullable();
-
+            $table->foreignId('user_id')->constrained('users');
+            $table->string('type')->default('conversion_pay');
+            $table->bigInteger('amount');
+            $table->string('status')->default('approved');
             $table->timestamps();
         });
     }
@@ -35,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('offers');
+        Schema::dropIfExists('transactions');
     }
 };

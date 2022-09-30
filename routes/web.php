@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/go/{user}/{offer}/cpa', function ($user, $offer) {
+    return "Would be possible redirect to the project, but site has not yet been configured. <br> Offer: $offer, User: $user";
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
