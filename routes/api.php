@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/action/pay', function () {
     return "Success";
 });
+
+Route::post('/action', 'App\Http\Controllers\Api\ActionController@init');

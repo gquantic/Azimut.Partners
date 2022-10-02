@@ -43,7 +43,7 @@ Route::prefix('profile')->middleware('auth')->group(function () {
      * MODERATION PAGE
      */
     Route::get('moderation', function () {
-        if (\Illuminate\Support\Facades\Auth::user()->moderated !== 0)
+        if (\Illuminate\Support\Facades\Auth::user()->moderated !== false)
             return redirect()->route('home');
 
         return view('profile.moderation');
