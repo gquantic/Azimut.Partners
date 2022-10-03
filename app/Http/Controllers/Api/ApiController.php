@@ -25,7 +25,7 @@ class ApiController extends Controller
      * @param $message
      * @return array
      */
-    public static function returnError($statusCode, $message): array
+    public static function returnError($statusCode, $message)
     {
         http_response_code($statusCode);
 
@@ -40,7 +40,7 @@ class ApiController extends Controller
      * @param $message
      * @return array
      */
-    public static function returnSuccess($message): array
+    public static function returnSuccess($message)
     {
         http_response_code(200);
         return [

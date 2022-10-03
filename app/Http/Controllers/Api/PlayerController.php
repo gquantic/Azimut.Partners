@@ -28,13 +28,15 @@ class PlayerController extends Controller
     public function savePlayer()
     {
         if ($this->checkPlayer($this->data) === false) {
-            $this->savePlayerHandler($this->data);
+            if ($this->savePlayerHandler($this->data) === true) {
+                return ApiController::returnSuccess('Player created.');
+            }
         } else {
             return ApiController::returnError(401, 'Player already exists.');
         }
     }
 
-    private function savePlayerHandler($data): void
+    private function savePlayerHandler($data)
     {
         try {
             Player::create([
@@ -44,9 +46,9 @@ class PlayerController extends Controller
                 'type' => $data['partner_type'] ?? 'cpa',
             ]);
 
-            ApiController::returnSuccess('Player registered.');
+            return true;
         } catch (\Exception) {
-            ApiController::returnError(404, 'Agent not found.');
+            return ApiController::returnError(404, 'Agent not found.');
         }
     }
 }
