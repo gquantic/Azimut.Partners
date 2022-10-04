@@ -16,4 +16,14 @@ class Player extends Model
         'name',
         'type',
     ];
+
+    public function agent(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function conversions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Conversion::class, 'player_id');
+    }
 }

@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('conversions', function (Blueprint $table) {
             $table->id();
+
             $table->foreignId('offer_id')->constrained('offers');
             $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('player_id')->constrained('players');
+
             $table->bigInteger('price');
             $table->string('source', 355)->nullable();
             $table->string('status')->default('new');

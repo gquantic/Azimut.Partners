@@ -20,6 +20,9 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
+            $table->integer('balance')->default(0);
+            $table->integer('wait_withdraw')->default(0);
+
             $table->boolean('moderated')->default(0);
 
             $table->rememberToken();

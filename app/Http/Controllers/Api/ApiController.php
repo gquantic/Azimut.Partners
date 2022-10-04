@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use JetBrains\PhpStorm\ArrayShape;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Foundation\Exceptions\Handler;
 
 class ApiController extends Controller
 {
@@ -23,29 +25,25 @@ class ApiController extends Controller
     /**
      * @param $statusCode
      * @param $message
-     * @return array
+     * @return JsonResponse
      */
     public static function returnError($statusCode, $message)
     {
-        http_response_code($statusCode);
-
-        return [
+        return response()->json([
             'status' => 'error',
             'message' => $message ?? 'Error',
-        ];
+        ], $statusCode);
     }
 
     /**
-     * @param Request $request
      * @param $message
-     * @return array
+     * @return JsonResponse
      */
     public static function returnSuccess($message)
     {
-        http_response_code(200);
-        return [
+        return response()->json([
             'status' => 'success',
             'message' => $message ?? 'Success',
-        ];
+        ], 200);
     }
 }

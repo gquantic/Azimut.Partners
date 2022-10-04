@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Api\PlayerController;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Exceptions\Handler;
 
 class ActionController extends ApiController
 {
@@ -23,14 +24,14 @@ class ActionController extends ApiController
 
     private function actionHandler()
     {
-        $playerController = new PlayerController($this->data);
+        if ($this->data['action'] === 'register') {
+            $playerController = new PlayerController($this->data);
+            return $playerController->savePlayer();
+        } elseif ($this->data['action'] === 'deposit') {
+            $depositController = new DepositController($this->data);
+            return $depositController->makeDeposit();
+        }
 
-        if ($this->data['action'] == 'register')
-            return $playerController->savePlayer($this->data);
-
-        return [
-            'status' => 'error',
-            'message' => 'Bad method call.',
-        ];
+        return ApiController::returnError(404, 'Bad method call.');
     }
 }
