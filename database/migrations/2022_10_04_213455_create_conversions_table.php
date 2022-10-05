@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('player_id')->constrained('players');
 
-            $table->bigInteger('price');
+            $table->bigInteger('price'); //
             $table->string('source', 355)->nullable();
             $table->string('status')->default('new');
             $table->json('more');
