@@ -17,7 +17,7 @@ class Moderated
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user()->moderated !== true) {
+        if (Auth::user()->moderated !== 1) {
             return redirect()->route('profile.moderation');
         }
 
