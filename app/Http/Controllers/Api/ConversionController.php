@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Conversion;
+use App\Models\Player;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ConversionController extends Controller
@@ -12,8 +14,8 @@ class ConversionController extends Controller
     {
         Conversion::query()->create([
             'offer_id' => 1,
-            'user_id' => $agent,
-            'player_id' => $data['player'],
+            'user_id' => User::where('cpa_id', $data['agent'])->first()->id,
+            'player_id' => Player::where('cpa_id', $data['player'])->first()->id,
             'price' => $price,
             'status' => 'approved',
             'more' => [],

@@ -23,9 +23,9 @@
                     <div class="card-body card-body-light">
                         <div class="title-medium color-gold">Links</div>
                         <label for="link" class="mt-3">Your personal link:</label>
-                        <input type="text" id="link" class="form-control" value="{{ env('app_url') }}/go/{{ \Illuminate\Support\Facades\Auth::id() }}/{{ $offer->id }}/cpa">
+                        <input type="text" id="link" class="form-control" value="azimut777.net?partner={{ \Illuminate\Support\Facades\Auth::user()->cpa_id }}&type=cpa">
                         <label for="share_link" class="mt-4">For reshare:</label>
-                        <input type="text" id="share_link" class="form-control" value="{{ env('app_url') }}/go/{{ \Illuminate\Support\Facades\Auth::id() }}/{{ $offer->id }}/share">
+                        <input type="text" id="share_link" class="form-control" value=azimut777.net?partner={{ \Illuminate\Support\Facades\Auth::user()->cpa_id }}&type=revshare>
                     </div>
                 </div>
             </div>

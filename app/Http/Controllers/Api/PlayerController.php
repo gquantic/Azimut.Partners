@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Player;
+use App\Models\User;
 use Illuminate\Http\Request;
 use JetBrains\PhpStorm\ArrayShape;
 
@@ -19,17 +20,18 @@ class PlayerController extends Controller
     public function checkPlayer()
     {
         try {
-            return Player::query()->findOrFail($this->data['player_id'])->first();
+            return Player::query()->where('cpa_id', $this->data['player'])->first();
         } catch (\Exception $e) {
-            return false;
+            return "false";
         }
     }
 
     public function savePlayer()
     {
-        if ($this->checkPlayer($this->data) === false) {
+        if (empty($this->checkPlayer($this->data))) {
             // Если всё норм, то сохраняем пользователя
             $this->savePlayerHandler($this->data);
+            return ApiController::returnSuccess('Player saved.');
         } else {
             // Если пользователь уже существует
             return ApiController::returnError(409, 'Player already exists.');
@@ -40,8 +42,8 @@ class PlayerController extends Controller
     {
         try {
             Player::create([
-                'id' => $data['player'],
-                'user_id' => $data['agent'],
+                'cpa_id' => $data['player'],
+                'user_id' => User::where('cpa_id', $data['agent'])->first()->id,
                 'name' => $data['player_name'] ?? '',
                 'type' => $data['partner_type'] ?? 'cpa',
             ]);

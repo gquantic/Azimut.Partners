@@ -68,6 +68,15 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'cpa_id' => $this->generateHash(),
         ]);
+    }
+
+    /**
+     * @return string
+     */
+    private function generateHash()
+    {
+        return sha1(rand(155, 300) + time());
     }
 }

@@ -33,7 +33,7 @@ class DepositController extends Controller
     private function setPlayer()
     {
         try {
-            $this->player = Player::query()->findOrFail($this->data['player'])->with('agent', 'conversions')->first();
+            $this->player = Player::query()->where('cpa_id', $this->data['player'])->with('agent', 'conversions')->first();
             $this->agent = $this->player->agent;
         } catch (\Exception $e) {
             return false;
