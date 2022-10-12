@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Api\PlayerController;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ApiActionRequest;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Exceptions\Handler;
 
@@ -17,7 +18,7 @@ class ActionController extends ApiController
         return $this->data;
     }
 
-    public function init(Request $request)
+    public function init(ApiActionRequest $request)
     {
         return $this->actionHandler();
     }

@@ -12,6 +12,7 @@ class Player extends Model
     protected $fillable = [
         'cpa_id',
         'user_id',
+        'offer_id',
         'referral_id',
         'name',
         'type',
@@ -29,11 +30,11 @@ class Player extends Model
 
     public function referrals(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(Player::class, 'referral_id');
+        return $this->hasMany(Player::class, 'referral_id', 'cpa_id');
     }
 
     public function refer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Player::class, 'referral_id', 'id');
+        return $this->belongsTo(Player::class, 'referral_id', 'cpa_id');
     }
 }

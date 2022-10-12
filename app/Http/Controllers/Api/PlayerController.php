@@ -20,7 +20,10 @@ class PlayerController extends Controller
     public function checkPlayer()
     {
         try {
-            return Player::query()->where('cpa_id', $this->data['player'])->first();
+            return Player::query()
+                    ->where('cpa_id', $this->data['player'])
+                    ->where('offer_id', $this->data['offer_id'])
+                    ->first();
         } catch (\Exception $e) {
             return "false";
         }
@@ -28,7 +31,7 @@ class PlayerController extends Controller
 
     public function savePlayer()
     {
-        if (empty($this->checkPlayer($this->data))) {
+        if (empty($this->checkPlayer())) {
             // Если всё норм, то сохраняем пользователя
             $this->savePlayerHandler($this->data);
             return ApiController::returnSuccess('Player saved.');
@@ -43,8 +46,10 @@ class PlayerController extends Controller
         try {
             Player::create([
                 'cpa_id' => $data['player'],
-                'user_id' => User::where('cpa_id', $data['agent'])->first()->id,
-                'name' => $data['player_name'] ?? '',
+                'user_id' => User::query()->find($data['agent'])->first()->id,
+                'offer_id' => (int) $data['offer_id'],
+                'referral_id' => $this->getReferral() ?? null,
+                'name' => $data['name'] ?? '',
                 'type' => $data['partner_type'] ?? 'cpa',
             ]);
 
@@ -52,5 +57,13 @@ class PlayerController extends Controller
         } catch (\Exception) {
             return ApiController::returnError(404, 'Agent not found.');
         }
+    }
+
+    private function getReferral()
+    {
+        if ($this->data['referral'] != '')
+            return Player::query()->where('cpa_id', $this->data['referral'])->where('offer_id', $this->data['offer_id'])->first()->id;
+        else
+            return null;
     }
 }

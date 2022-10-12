@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
+            $table->string('token', 256)->unique();
 
             $table->string('title', 255);
             $table->text('description', 500)->nullable();

@@ -49,3 +49,7 @@ Route::prefix('profile')->middleware('auth')->group(function () {
         return view('profile.moderation');
     })->name('profile.moderation');
 });
+
+Route::get('/test', function () {
+    dd(\App\Models\Player::query()->where('id', 4)->with('refer')->get());
+});

@@ -18,10 +18,30 @@ class OfferFactory extends Factory
     public function definition()
     {
         return [
+            'token' => $this->generate_string(256),
             'title' => fake()->name(),
             'description' => fake()->text(500),
             'award' => 10,
             'percent_award' => 3,
         ];
+    }
+
+    /**
+     * Make random string
+     *
+     * @param $strength
+     * @param $input
+     * @return string
+     */
+    public function generate_string($strength = 16, $input = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'): string
+    {
+        $input_length = strlen($input);
+        $random_string = '';
+        for($i = 0; $i < $strength; $i++) {
+            $random_character = $input[mt_rand(0, $input_length - 1)];
+            $random_string .= $random_character;
+        }
+
+        return $random_string;
     }
 }

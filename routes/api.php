@@ -22,4 +22,6 @@ Route::get('/action/pay', function () {
     return "Success";
 });
 
-Route::post('/action', 'App\Http\Controllers\Api\ActionController@init');
+Route::post('/action', 'App\Http\Controllers\Api\ActionController@init')
+    ->middleware('api.offer')
+    ->name('api.conversion');
