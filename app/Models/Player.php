@@ -30,11 +30,11 @@ class Player extends Model
 
     public function referrals(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(Player::class, 'referral_id', 'cpa_id');
+        return $this->hasMany(Player::class, 'referral_id', 'id');
     }
 
     public function refer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(Player::class, 'referral_id', 'cpa_id');
+        return $this->belongsTo(Player::class, 'referral_id', 'id');
     }
 }

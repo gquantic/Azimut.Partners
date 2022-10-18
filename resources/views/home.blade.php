@@ -32,11 +32,16 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="col-md-12 mb-2">
+        <div class="col-md-6 mb-2">
             <div class="title-medium color-white">
                 Last conversions
             </div>
         </div>
+        <div class="col-md-6 d-flex justify-content-end">
+            <a href="{{ route('players.index') }}" class="btn btn-warning text-black">Invited players</a>
+        </div>
+    </div>
+    <div class="row mt-3">
         <div class="col-md-12">
             <table class="table">
                 <thead>

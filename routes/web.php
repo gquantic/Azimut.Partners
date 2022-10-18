@@ -33,7 +33,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::middleware('auth')->group(function () {
     Route::resources([
-        'offers' => \App\Http\Controllers\OfferController::class
+        'offers' => \App\Http\Controllers\OfferController::class,
+        'players' => \App\Http\Controllers\PlayersController::class,
     ]);
 });
 
@@ -51,5 +52,7 @@ Route::prefix('profile')->middleware('auth')->group(function () {
 });
 
 Route::get('/test', function () {
-    dd(\App\Models\Player::query()->where('id', 4)->with('refer')->get());
+    dd(\App\Models\Player::query()->where('id', 10)->with('refer', 'referrals')->get());
 });
+
+Route::get('/controller/{id}', 'App\Http\Controllers\Api\ReferralController@checkHandles');
