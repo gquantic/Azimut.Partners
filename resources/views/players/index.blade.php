@@ -11,30 +11,32 @@
         </div>
         <div class="row mt-3">
             @foreach($players as $player)
-                <div class="col-md-3 d-flex flex-column align-items-center">
+                <div class="col-md-1 d-flex flex-column align-items-center">
                     <div class="card w-100">
                         <div class="card-body-light pt-2 pb-2">
-                            <div class="text-white color-gold" style="width: fit-content;margin: 0 auto;">[{{ $player->id }}]</div>
-                            <div>
-                                @php
-                                    $referralController = new \App\Http\Controllers\Api\ReferralController();
-                                    $referrals = $referralController->checkHandles($player->cpa_id);
+                            <a href="{{ route('players.show', $player->id) }}" class="text-decoration-none">
+                                <div class="text-white color-white" style="width: fit-content;margin: 0 auto;">{{ $player->id }}</div>
+                            </a>
+{{--                            <div>--}}
+{{--                                @php--}}
+{{--                                    $referralController = new \App\Http\Controllers\Api\ReferralController();--}}
+{{--                                    $referrals = $referralController->checkHandles($player->cpa_id);--}}
 
-                                    foreach ($referrals as $referral) {
-                                @endphp
-                                <div class="d-flex justify-content-center mb-2 mt-2">
-                                    @php
-                                        foreach ($referral as $referralBranch) {
-                                    @endphp
-                                    <div class="text-white color-gold ml-2 mr-2" style="width: fit-content;">[{{ $referralBranch }}]</div>
-                                    @php
-                                        }
-                                    @endphp
-                                </div>
-                                @php
-                                    }
-                                @endphp
-                            </div>
+{{--                                    foreach ($referrals as $referral) {--}}
+{{--                                @endphp--}}
+{{--                                <div class="d-flex justify-content-center mb-2 mt-2">--}}
+{{--                                    @php--}}
+{{--                                        foreach ($referral as $referralBranch) {--}}
+{{--                                    @endphp--}}
+{{--                                    <div class="text-white color-gold ml-2 mr-2" style="width: fit-content;">[{{ $referralBranch }}]</div>--}}
+{{--                                    @php--}}
+{{--                                        }--}}
+{{--                                    @endphp--}}
+{{--                                </div>--}}
+{{--                                @php--}}
+{{--                                    }--}}
+{{--                                @endphp--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>

@@ -48,11 +48,15 @@ class PlayersController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show($id)
+    public function show(Player $player)
     {
-        //
+        return view('players.show', [
+            'player' => $player,
+            'players' => $player->referrals()->get(),
+            'refer' => Player::query()->where('id', $player->referral_id)->first() ?? '',
+        ]);
     }
 
     /**
