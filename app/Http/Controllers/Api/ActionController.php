@@ -8,6 +8,83 @@ use App\Http\Requests\ApiActionRequest;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Exceptions\Handler;
 
+/**
+ *  @OA\Post(
+ *     path="/api/action",
+ *
+ *     @OA\Parameter (
+ *          name="action",
+ *          description="register / deposit",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="string"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="player",
+ *          description="Player ID on project",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="int"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="token",
+ *          description="Partner site token",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="string"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="agent",
+ *          description="Agent ID",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="int"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="offer_id",
+ *          description="Offer ID",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="int"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="offer_token",
+ *          description="Offer token",
+ *          in="query",
+ *          required=true,
+ *          @OA\Schema (
+ *              type="string"
+ *          )
+ *     ),
+ *
+ *     @OA\Parameter (
+ *          name="referral",
+ *          description="Referral ID (if provided)",
+ *          in="query",
+ *          required=false,
+ *          @OA\Schema (
+ *              type="id"
+ *          )
+ *     ),
+ *
+ *     @OA\Response(response="200", description="Успешное событие")
+ * )
+ */
 class ActionController extends ApiController
 {
     /**

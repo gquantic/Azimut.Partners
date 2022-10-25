@@ -17,11 +17,11 @@ class ApiKey
      */
     public function handle(Request $request, Closure $next)
     {
-        $data = $request->all();
-        if (!isset($data['token']) || $data['token'] != env('API_TOKEN')) {
-            http_response_code(403);
-            exit('Токен неверен.');
-        }
+//        $data = $request->all();
+//        if (!isset($data['token']) || $data['token'] != env('API_TOKEN')) {
+//            http_response_code(403);
+//            exit('Токен неверен.');
+//        }
 
         return $next($request);
     }
