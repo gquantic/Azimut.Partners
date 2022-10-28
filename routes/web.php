@@ -56,3 +56,5 @@ Route::get('/test', function () {
 });
 
 Route::get('/controller/{id}', 'App\Http\Controllers\Api\ReferralController@checkHandles');
+
+Route::view('/wallet', 'profile.wallet');

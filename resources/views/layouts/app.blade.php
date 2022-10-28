@@ -42,7 +42,7 @@
                         <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
                         <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
                         <a href="/news" class="menu-link">My profile</a>
-                        <a href="" class="menu-link">Wallet</a>
+                        <a href="/wallet" class="menu-link">Wallet</a>
                     </div>
 
                     <div class="d-flex align-items-center">
