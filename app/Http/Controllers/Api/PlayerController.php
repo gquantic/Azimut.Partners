@@ -31,6 +31,12 @@ class PlayerController extends Controller
 
     public function savePlayer()
     {
+        if (!empty($this->data['referral']) && $this->data['referral'] !== '') {
+            if (count(Player::query()->where('cpa_id', $this->data['referral'])->first()->referrals()->get()) >= 2) {
+                return ApiController::returnError(409, 'Already exists 2 referrals.');
+            }
+        }
+
         if (empty($this->checkPlayer())) {
             // Если всё норм, то сохраняем пользователя
             $this->savePlayerHandler($this->data);

@@ -22,7 +22,9 @@ return new class extends Migration
             $table->foreignId('referral_id')->comment('Реферал')->nullable()->constrained('players');
 
             $table->string('name')->default('Нет данных');
-            $table->string('type')->default('cpa'); // RevShare, CPA
+            $table->string('type')->default('revenue_share'); // RevShare, CPA
+            $table->integer('pay_percent')->default(20);
+
             $table->timestamps();
         });
     }

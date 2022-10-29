@@ -16,7 +16,6 @@ class ApiActionRequest extends FormRequest
         return [
             'action' => 'required|string',
             'offer_id' => 'required|int',
-            'token' => 'required|string',
             'agent' => 'required|int',
         ];
     }
