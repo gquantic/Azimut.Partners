@@ -23,7 +23,7 @@ return new class extends Migration
 
             $table->string('name')->default('Нет данных');
             $table->string('type')->default('revenue_share'); // RevShare, CPA
-            $table->integer('pay_percent')->default(20);
+            $table->integer('pay_percent')->default(10);
 
             $table->timestamps();
         });

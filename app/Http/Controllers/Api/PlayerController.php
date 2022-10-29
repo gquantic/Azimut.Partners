@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Revshare\PercentController;
 use App\Models\Player;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -40,6 +41,25 @@ class PlayerController extends Controller
         if (empty($this->checkPlayer())) {
             // Если всё норм, то сохраняем пользователя
             $this->savePlayerHandler($this->data);
+
+            // И пересчитываем процент самому верхнему
+            if ($this->data['referral'] !== null) {
+                $referralController = new ReferralController();
+                $refsTree = $referralController->checkHandles($this->data['player']);
+
+                $percentController = new PercentController($refsTree);
+                $percentToSet = $percentController->calcPercent();
+
+                $thisPlayer = Player::query()->where('cpa_id', $this->data['player'])->first();
+                $topPlayer = $referralController->gotTop($thisPlayer);
+
+                var_dump($percentToSet);
+
+                Player::query()->where('id', $topPlayer)->update([
+                    'pay_percent' => $percentToSet < 10 ? 10 : $percentToSet
+                ]);
+            }
+
             return ApiController::returnSuccess('Player saved.');
         } else {
             // Если пользователь уже существует

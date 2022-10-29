@@ -16,9 +16,29 @@ class PercentController extends Controller
      * Макс процент: 65%
      */
 
+    /**
+     * Tree array
+     * @var array
+     */
     protected array $tree;
 
+    /**
+     * Total percent
+     * @var int
+     */
     public int $percent = 0;
+
+    /**
+     * Closed gold triangles
+     * @var int
+     */
+    public int $goldTriangles = 0;
+
+    /**
+     * Closed platinum triangles
+     * @var int
+     */
+    public int $platinumTriangles = 0;
 
     /**
      * @param $tree : ReferralController tree array

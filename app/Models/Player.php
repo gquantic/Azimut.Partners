@@ -16,6 +16,7 @@ class Player extends Model
         'referral_id',
         'name',
         'type',
+        'pay_percent',
     ];
 
     public function agent(): \Illuminate\Database\Eloquent\Relations\BelongsTo

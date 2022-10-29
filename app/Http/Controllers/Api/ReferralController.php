@@ -16,6 +16,9 @@ class ReferralController extends Controller
     public array $firstLevel;
     public array $secondLevel;
     public array $thirdLevel;
+    public array $fourthLevel;
+    public array $fiveLevel;
+    public array $sixLevel;
 
     /**
      * Массив самих рефералов
@@ -61,10 +64,16 @@ class ReferralController extends Controller
         $this->firstLevel = $this->goDown([$top]);
         $this->secondLevel = $this->goDown($this->firstLevel);
         $this->thirdLevel = $this->goDown($this->secondLevel);
+        $this->fourthLevel = $this->goDown($this->thirdLevel);
+        $this->fiveLevel = $this->goDown($this->fourthLevel);
+        $this->sixLevel = $this->goDown($this->fiveLevel);
         return [
             $this->firstLevel,
             $this->secondLevel,
             $this->thirdLevel,
+            $this->fourthLevel,
+            $this->fiveLevel,
+//            $this->sixLevel,
         ];
     }
 
