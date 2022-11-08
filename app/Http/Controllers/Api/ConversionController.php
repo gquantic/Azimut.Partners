@@ -14,7 +14,7 @@ class ConversionController extends Controller
     {
         Conversion::query()->create([
             'offer_id' => 1,
-            'user_id' => User::where('cpa_id', $data['agent'])->first()->id,
+            'user_id' => User::where('id', $data['agent'])->first()->id,
             'player_id' => Player::where('cpa_id', $data['player'])->first()->id,
             'price' => $price,
             'status' => 'approved',

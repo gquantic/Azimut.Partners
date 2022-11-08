@@ -22,6 +22,10 @@ Route::get('/action/pay', function () {
     return "Success";
 });
 
-Route::post('/action', 'App\Http\Controllers\Api\ActionController@init')
+Route::post('/action/register', 'App\Http\Controllers\Api\ActionController@register')
     ->middleware('api.offer')
-    ->name('api.conversion');
+    ->name('api.register');
+
+Route::post('/action/deposit', 'App\Http\Controllers\Api\ActionController@deposit')
+    ->middleware('api.offer')
+    ->name('api.deposit');

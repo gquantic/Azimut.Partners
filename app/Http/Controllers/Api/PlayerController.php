@@ -32,6 +32,9 @@ class PlayerController extends Controller
 
     public function savePlayer()
     {
+        if ($this->checkTopType() !== true)
+            return ApiController::returnError(409, 'Only CPA player can have referrals.');
+
         if (!empty($this->data['referral']) && $this->data['referral'] !== '') {
             if (count(Player::query()->where('cpa_id', $this->data['referral'])->first()->referrals()->get()) >= 2) {
                 return ApiController::returnError(409, 'Already exists 2 referrals.');
@@ -52,8 +55,6 @@ class PlayerController extends Controller
 
                 $thisPlayer = Player::query()->where('cpa_id', $this->data['player'])->first();
                 $topPlayer = $referralController->gotTop($thisPlayer);
-
-                var_dump($percentToSet);
 
                 Player::query()->where('id', $topPlayer)->update([
                     'pay_percent' => $percentToSet < 10 ? 10 : $percentToSet
@@ -76,7 +77,7 @@ class PlayerController extends Controller
                 'offer_id' => (int) $data['offer_id'],
                 'referral_id' => $this->getReferral() ?? null,
                 'name' => $data['name'] ?? '',
-                'type' => $data['partner_type'] ?? 'cpa',
+                'type' => $data['type'] ?? 'cpa',
             ]);
 
             return ApiController::returnSuccess('Player saved.');
@@ -91,5 +92,18 @@ class PlayerController extends Controller
             return Player::query()->where('cpa_id', $this->data['referral'])->where('offer_id', $this->data['offer_id'])->first()->id;
         else
             return null;
+    }
+
+    private function checkTopType()
+    {
+        // Если указан реферал, то проверяем, какого он типа (Не забываем, что мы работает по cpa_id)
+        if ($this->data['referral'] !== null & $this->data['referral'] !== '') {
+            // Получаем самого верхнего
+            if (Player::query()->where('cpa_id', $this->data['referral'])->first()->type == 'cpa') {
+                return false;
+            } else {
+                return true;
+            }
+        }
     }
 }
