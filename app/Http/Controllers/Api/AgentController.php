@@ -18,7 +18,7 @@ class AgentController extends Controller
         self::$user = User::query()->where('id', $agentId);
 
         self::$user->update([
-            'balance' => self::$user->first()->balance + 20
+            'balance' => self::$user->first()->balance + $amount
         ]);
     }
 }

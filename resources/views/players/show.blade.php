@@ -28,7 +28,7 @@
                     <div class="card w-100">
                         <div class="card-body-light pt-2 pb-2">
                             <a href="{{ route('players.show', $player->id) }}" class="text-decoration-none">
-                                <div class="text-white color-white" style="width: fit-content;margin: 0 auto;">{{ $player->id }}</div>
+                                    <div class="text-white color-white" style="width: fit-content;margin: 0 auto;">{{ $player->id }}</div>
                             </a>
                         </div>
                     </div>

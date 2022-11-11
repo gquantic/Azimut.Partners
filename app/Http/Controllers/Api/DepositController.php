@@ -59,15 +59,23 @@ class DepositController extends Controller
 
     private function revshareConversion(): \Illuminate\Http\JsonResponse
     {
-        // Если это ревшара, то проверяем, кто сделал конферсию
-        if ($this->data['referral'] != null)
-            return ApiController::returnError('409', 'Only main player can pay agent balance.');
+        $referralController = new ReferralController();
+
+        // Если это ревшара, то проверяем, кто сделал конферсию -- Это пока нам не надо
+//        if ($this->data['referral'] != null)
+//            return ApiController::returnError('409', 'Only main player can pay agent balance.');
+
+        // Тут мы должны вычесть процент по пользователю
+        $payPercent = $referralController->userPercent($this->data['player']);
+
+//        $topPlayer = $referralController->gotTop($this->data['player']);
+//        $topPlayer = Player::query()->find($topPlayer)->
 
         // Если основной игрок, то начисляем процент
-        $amount = ($this->data['amount'] / 100) * $this->player->pay_percent;
+        $amount = round(($this->data['amount'] / 100) * $payPercent);
 
-        ConversionController::makeConversion($this->data, $this->agent->id, 10);
-        AgentController::payAgentBalance($this->agent->id, 10);
-        return ApiController::returnSuccess("Conversion created for agent {$this->agent->id}.");
+        ConversionController::makeConversion($this->data, $this->agent->id, $amount);
+        AgentController::payAgentBalance($this->agent->id, $amount);
+        return ApiController::returnSuccess("Conversion created for agent {$this->agent->id} on sum {$amount}.");
     }
 }

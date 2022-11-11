@@ -111,4 +111,9 @@ class ActionController extends ApiController
         $depositController = new DepositController($this->data);
         return $depositController->makeDeposit();
     }
+
+    public function conversion()
+    {
+
+    }
 }

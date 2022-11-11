@@ -55,6 +55,11 @@ Route::get('/test', function () {
     dd(\App\Models\Player::query()->where('id', 10)->with('refer', 'referrals')->get());
 });
 
+Route::get('/test/{id}', function ($id) {
+    $referralController = new \App\Http\Controllers\Api\ReferralController();
+    dd($referralController->userPercent($id));
+});
+
 Route::get('/controller/{id}', 'App\Http\Controllers\Api\ReferralController@checkHandles');
 
 Route::view('/wallet', 'profile.wallet');

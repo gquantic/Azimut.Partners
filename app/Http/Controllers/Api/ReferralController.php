@@ -20,6 +20,22 @@ class ReferralController extends Controller
     public array $fiveLevel;
     public array $sixLevel;
 
+    protected array $requires = [
+        1 => 2,
+        2 => 6,
+        3 => 16,
+        4 => 32,
+        5 => 64,
+    ];
+
+    protected array $percents = [
+        1 => 2.5,
+        2 => 3.2,
+        3 => 5,
+        4 => 10,
+        5 => 15,
+    ];
+
     /**
      * Массив самих рефералов
      *
@@ -73,7 +89,6 @@ class ReferralController extends Controller
             $this->thirdLevel,
             $this->fourthLevel,
             $this->fiveLevel,
-//            $this->sixLevel,
         ];
     }
 
@@ -119,5 +134,81 @@ class ReferralController extends Controller
         }
 
         return $referralsReturn;
+    }
+
+    public function userPercent($cpaId)
+    {
+        $level = $this->inWhichBranchIsPerson($cpaId);
+        $gold = $this->isGoldTriangle($cpaId);
+        $platinum = $this->isPlatinumTriangle($cpaId);
+
+//        return dd($gold, $platinum, $level);
+
+        if ($platinum) {
+            return $this->percents[$level] * 1.5;
+        } elseif ($gold) {
+            return $this->percents[$level] * 1.2;
+        } else {
+            return $this->percents[$level];
+        }
+    }
+
+    /**
+     * @param int $cpaId
+     * @return int
+     */
+    public function inWhichBranchIsPerson(int $cpaId)
+    {
+        $player = Player::query()->where('cpa_id', $cpaId)->first();
+        $referralId = $player->referral_id;
+        $level = 0;
+
+
+        // Идём вверх
+        while ($referralId != null) {
+            $refer = Player::query()->where('id', $referralId)->first();
+            $referralId = $refer->referral_id;
+
+            $level += 1;
+        }
+
+        return $level;
+    }
+
+    public function isGoldTriangle($cpaId)
+    {
+        // Идём к верхнему
+        $current = Player::query()->where('cpa_id', $cpaId)->with('refer')->first();
+
+        if (count($current->refer->referrals()->get()) > 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function isPlatinumTriangle($cpaId)
+    {
+        $level = $this->inWhichBranchIsPerson($cpaId);
+        $count = $this->referralsNumber($cpaId);
+
+        if ($count < $this->requires[$level]) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public function referralsNumber($cpaId)
+    {
+        // Получаем общую ветку
+        $triangle = $this->checkHandles($cpaId);
+        $refsCount = 0;
+
+        foreach ($triangle as $bottTriangle) {
+            $refsCount += count($bottTriangle);
+        }
+
+        return $refsCount;
     }
 }
