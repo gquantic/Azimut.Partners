@@ -8,11 +8,13 @@
             </div>
             <div class="col-md-12 mb-4">
                 <div class="card">
-                    <div class="card-body card-body-light">
+                    <div class="card-body card-body-light d-flex justify-content-between">
                         <h5 style="margin-bottom: -5px;">
                             {{ $link->title }}
                         </h5>
-                        <span style="font-size: 11px;color:rgba(250,250,250,.2) !important;margin-top: -30px;"></span>
+                        <a href="{{ route('offers.show', $link->offer_id) }}" class="text-decoration-none">
+                            Connected offer: <span class="color-gold ml-1">{{ $link->offer->title }}</span>
+                        </a>
                     </div>
                 </div>
             </div>
