@@ -25,10 +25,8 @@ class DepositController extends Controller
             return ApiController::returnError(404, "Player {$this->data['player']} not found.");
 
         // Тут мы должны проверить, какого типа игрок
-        if ($this->player->type == 'cpa') {
-            return $this->cpaConversion();
-        } else {
-            return $this->revshareConversion();
+        if ($this->player->type == 'revshare') {
+            return ApiController::returnError('409', 'Only CPA players can pay deposit.');
         }
     }
 
@@ -55,27 +53,5 @@ class DepositController extends Controller
         ConversionController::makeConversion($this->data, $this->agent->id, 10);
         AgentController::payAgentBalance($this->agent->id, 10);
         return ApiController::returnSuccess("Conversion created for agent {$this->agent->id}.");
-    }
-
-    private function revshareConversion(): \Illuminate\Http\JsonResponse
-    {
-        $referralController = new ReferralController();
-
-        // Если это ревшара, то проверяем, кто сделал конферсию -- Это пока нам не надо
-//        if ($this->data['referral'] != null)
-//            return ApiController::returnError('409', 'Only main player can pay agent balance.');
-
-        // Тут мы должны вычесть процент по пользователю
-        $payPercent = $referralController->userPercent($this->data['player']);
-
-//        $topPlayer = $referralController->gotTop($this->data['player']);
-//        $topPlayer = Player::query()->find($topPlayer)->
-
-        // Если основной игрок, то начисляем процент
-        $amount = round(($this->data['amount'] / 100) * $payPercent);
-
-        ConversionController::makeConversion($this->data, $this->agent->id, $amount);
-        AgentController::payAgentBalance($this->agent->id, $amount);
-        return ApiController::returnSuccess("Conversion created for agent {$this->agent->id} on sum {$amount}.");
     }
 }

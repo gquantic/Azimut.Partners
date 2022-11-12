@@ -17,7 +17,7 @@ class CreateLinkInService
      */
     public function handle($event)
     {
-        $request = Http::post('https://urltrack.net/system/create', ['url' => "{$event->link->offer->host}/affiliate?offerId={$event->link->id}"])
+        $request = Http::post('https://urltrack.net/system/create', ['url' => "{$event->link->offer->host}/affiliate?linkId={$event->link->id}"])
                     ->body();
         $request = json_decode($request, true);
 

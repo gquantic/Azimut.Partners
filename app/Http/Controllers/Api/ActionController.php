@@ -112,6 +112,12 @@ class ActionController extends ApiController
         return $depositController->makeDeposit();
     }
 
+    public function lose()
+    {
+        $depositController = new LoseController($this->data);
+        return $depositController->makeDeposit();
+    }
+
     public function conversion()
     {
 

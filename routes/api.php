@@ -29,3 +29,11 @@ Route::post('/action/register', 'App\Http\Controllers\Api\ActionController@regis
 Route::post('/action/deposit', 'App\Http\Controllers\Api\ActionController@deposit')
     ->middleware('api.offer')
     ->name('api.deposit');
+
+Route::post('/action/lose', 'App\Http\Controllers\Api\ActionController@lose')
+    ->middleware('api.offer')
+    ->name('api.deposit');
+
+Route::get('/test/{id}', function ($id) {
+    return dd(\App\Http\Controllers\Api\LinkController::getLinkInfo($id));
+});
