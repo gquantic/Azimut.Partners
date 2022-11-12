@@ -13,7 +13,7 @@
                             <h5 style="margin-bottom: -5px;">
                                 {{ $offer->title }}
                             </h5>
-                            <a href="{{  }}">
+                            <a href="{{ $offer->host }}" target="_blank">
                                 <button class="btn btn-warning" style="height: 35px;">
                                     <img src="{{ asset('img/eye-svgrepo-com.svg') }}" alt="" style="width: 30px !important;">
                                 </button>
