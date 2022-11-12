@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('title', 255);
             $table->text('description', 500)->nullable();
 
+            $table->string('host', 600);
+
             $table->integer('award')->default(10);
             $table->integer('percent_award')->default(3);
 

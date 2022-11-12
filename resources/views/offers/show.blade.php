@@ -9,9 +9,16 @@
             <div class="col-md-12 mb-4">
                 <div class="card">
                     <div class="card-body card-body-light">
-                        <h5 style="margin-bottom: -5px;">
-                            {{ $offer->title }}
-                        </h5>
+                        <div class="d-flex justify-content-between">
+                            <h5 style="margin-bottom: -5px;">
+                                {{ $offer->title }}
+                            </h5>
+                            <a href="{{  }}">
+                                <button class="btn btn-warning" style="height: 35px;">
+                                    <img src="{{ asset('img/eye-svgrepo-com.svg') }}" alt="" style="width: 30px !important;">
+                                </button>
+                            </a>
+                        </div>
                         <span style="font-size: 11px;color:rgba(250,250,250,.2) !important;margin-top: -30px;">Offer id: {{ $offer->id }}</span>
 
                         <p class="mb-2 mt-2 title-medium"><span class="color-gold">{{ $offer->award }}</span> or <span class="color-gold">{{ $offer->percent_award }}%</span></p>

@@ -21,6 +21,7 @@ class OfferFactory extends Factory
             'token' => $this->generate_string(256),
             'title' => fake()->name(),
             'description' => fake()->text(500),
+            'host' => fake()->url(),
             'award' => 10,
             'percent_award' => 3,
         ];
