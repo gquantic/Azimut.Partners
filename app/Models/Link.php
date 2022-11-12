@@ -16,6 +16,7 @@ class Link extends Model
         'comment',
         'type',
         'host',
+        'link',
     ];
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo

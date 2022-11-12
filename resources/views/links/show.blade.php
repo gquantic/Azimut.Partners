@@ -38,6 +38,10 @@
                             <dt>Host:</dt>
                             <dd>{{ $link->host }}</dd>
                         </dl>
+                        <dl class="text-white mb-2">
+                            <dt>Link:</dt>
+                            <dd><a href="{{ $link->link }}" target="_blank" class="color-gold">{{ $link->link }}</a></dd>
+                        </dl>
                     </div>
                 </div>
             </div>

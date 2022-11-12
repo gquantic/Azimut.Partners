@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CreateLink;
 use App\Http\Requests\CreateLinkRequest;
 use App\Models\Link;
 use Illuminate\Http\Request;
@@ -45,6 +46,8 @@ class LinkController extends Controller
             'type' => $request->post('type'),
             'host' => $request->post('host'),
         ]);
+
+        event(new CreateLink($link));
 
         return redirect()->route('links.show', $link->id);
     }
