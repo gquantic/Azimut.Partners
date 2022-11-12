@@ -2,10 +2,10 @@ $color-gold: #FFB800;
 $color-dark: #0B0B21;
 
 $card-body-color: $color-dark;
-$card-body-light-color: #10102F;
+$card-body-light-color: #161641;
 
 $body-bg: #0D0D26;
-$input-body-color: #0E0E2A;
+$input-body-color: #0f0f31;
 
 h1, h2, h3, h4, h5, a,  p, span, label, .card-header {
     color: #fff !important;
@@ -73,9 +73,16 @@ textarea,
 select {
     background-color: $input-body-color !important;
     color: #fff !important;
+    border: none !important;
+    border-bottom: 1px solid rgba($color-gold, 0);
 
     &::placeholder {
         color: rgba(250,250,250,.5) !important;
+    }
+
+    &:focus {
+        background-color: $input-body-color;
+        border-bottom-color: $color-gold;
     }
 }
 

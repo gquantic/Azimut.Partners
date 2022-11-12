@@ -21,16 +21,32 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body card-body-light">
+                        <h5>Create link</h5>
                         <form action="">
-                            <input type="text" name="title" placeholder="Link name" class="form-control mb-2">
-                            <select name="type" id="" class="form-control mb-2">
-                                <option value="cpa">CPA</option>
-                                <option value="revshare">RevShare</option>
-                            </select>
-                            <select name="host" id="" class="form-control mb-2">
-                                <option value="urltrack.net">urltrack.net</option>
-                            </select>
-                            <textarea name="comment" id="" cols="30" rows="4" placeholder="Comment" class="form-control mb-2"></textarea>
+                            <div class="form-group mt-3">
+                                <label for="">Link title</label>
+                                <input type="text" name="title" placeholder="New link" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Connection type</label>
+                                <select name="type" id="" class="form-control mb-2">
+                                    <option value="cpa">CPA</option>
+                                    <option value="revshare">RevShare</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Link host</label>
+                                <select name="host" id="" class="form-control mb-2">
+                                    <option value="urltrack.net">urltrack.net</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Comment</label>
+                                <textarea name="comment" id="" cols="30" rows="4" placeholder="Comment" class="form-control mb-2"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-start">
+                                <input type="button" value="Create" class="btn btn-warning text-black mt-2 mb-2">
+                            </div>
                         </form>
                     </div>
                 </div>
