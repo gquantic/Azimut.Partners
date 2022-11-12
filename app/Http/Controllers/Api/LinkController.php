@@ -11,6 +11,9 @@ class LinkController extends Controller
 {
     public static function getLinkInfo($linkId)
     {
+        /*
+         * От этого ресурса работают методы. Не вырезать ресурс!
+         */
         return new LinkResource(Link::query()->find($linkId));
     }
 }

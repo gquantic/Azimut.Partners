@@ -12,10 +12,12 @@ use JetBrains\PhpStorm\ArrayShape;
 class PlayerController extends Controller
 {
     private $data;
+    protected mixed $linkData;
 
     public function __construct($data)
     {
         $this->data = $data;
+        $this->linkData = LinkController::getLinkInfo($data['link_id']);
     }
 
     public function checkPlayer()
@@ -23,7 +25,7 @@ class PlayerController extends Controller
         try {
             return Player::query()
                     ->where('cpa_id', $this->data['player'])
-                    ->where('offer_id', $this->data['offer_id'])
+                    ->where('offer_id', $this->linkData->offer_id)
                     ->first();
         } catch (\Exception $e) {
             return "false";
@@ -73,11 +75,11 @@ class PlayerController extends Controller
         try {
             Player::create([
                 'cpa_id' => $data['player'],
-                'user_id' => User::query()->find($data['agent'])->first()->id,
-                'offer_id' => (int) $data['offer_id'],
+                'user_id' => $this->linkData->user_id,
+                'offer_id' => (int) $this->linkData->offer_id,
                 'referral_id' => $this->getReferral() ?? null,
                 'name' => $data['name'] ?? '',
-                'type' => $data['type'] ?? 'cpa',
+                'type' => $this->linkData->type ?? 'cpa',
             ]);
 
             return ApiController::returnSuccess('Player saved.');
@@ -89,7 +91,7 @@ class PlayerController extends Controller
     private function getReferral()
     {
         if ($this->data['referral'] != '')
-            return Player::query()->where('cpa_id', $this->data['referral'])->where('offer_id', $this->data['offer_id'])->first()->id;
+            return Player::query()->where('cpa_id', $this->data['referral'])->where('offer_id', $this->linkData->offer_id)->first()->id;
         else
             return null;
     }
@@ -97,13 +99,13 @@ class PlayerController extends Controller
     private function checkTopType()
     {
         // Если указан реферал, то проверяем, какого он типа (Не забываем, что мы работает по cpa_id)
-        if ($this->data['referral'] !== null & $this->data['referral'] !== '') {
+        if ($this->data['referral'] !== null && $this->data['referral'] !== '') {
             // Получаем самого верхнего
             if (Player::query()->where('cpa_id', $this->data['referral'])->first()->type == 'cpa') {
                 return false;
             } else {
                 return true;
             }
-        }
+        } else return true;
     }
 }

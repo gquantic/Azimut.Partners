@@ -13,10 +13,12 @@ class DepositController extends Controller
     public array $data;
     protected mixed $player;
     protected mixed $agent;
+    protected mixed $linkData;
 
     public function __construct($data)
     {
         $this->data = $data;
+        $this->linkData = LinkController::getLinkInfo($data['link_id']);
     }
 
     public function makeDeposit()
@@ -28,6 +30,8 @@ class DepositController extends Controller
         if ($this->player->type == 'revshare') {
             return ApiController::returnError('409', 'Only CPA players can pay deposit.');
         }
+
+        $this->cpaConversion();
     }
 
     private function setPlayer()
@@ -50,8 +54,8 @@ class DepositController extends Controller
         if ($this->data['amount'] < 20) // если она меньше 20, то выкидываем с ошибкой
             return ApiController::returnError('409', 'Minimal amount: 20$');
 
-        ConversionController::makeConversion($this->data, $this->agent->id, 10);
-        AgentController::payAgentBalance($this->agent->id, 10);
-        return ApiController::returnSuccess("Conversion created for agent {$this->agent->id}.");
+        ConversionController::makeConversion($this->data, $this->linkData->user_id, 10);
+        AgentController::payAgentBalance($this->linkData->user_id, 10);
+        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->user_id}.");
     }
 }

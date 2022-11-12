@@ -11,10 +11,12 @@ class LoseController extends Controller
     public array $data;
     protected mixed $player;
     protected mixed $agent;
+    protected mixed $linkData;
 
     public function __construct($data)
     {
         $this->data = $data;
+        $this->linkData = LinkController::getLinkInfo($data['link_id']);
     }
 
     public function makeDeposit()
@@ -26,6 +28,8 @@ class LoseController extends Controller
         if ($this->player->type == 'cpa') {
             return ApiController::returnError('409', 'Only RevShare players can pay lose.');
         }
+
+        $this->revshareConversion();
     }
 
     private function setPlayer()
@@ -55,8 +59,8 @@ class LoseController extends Controller
         // Если основной игрок, то начисляем процент
         $amount = round(($this->data['amount'] / 100) * $payPercent);
 
-        ConversionController::makeConversion($this->data, $this->agent->id, $amount);
-        AgentController::payAgentBalance($this->agent->id, $amount);
-        return ApiController::returnSuccess("Conversion created for agent {$this->agent->id} on sum {$amount}.");
+        ConversionController::makeConversion($this->data, $this->linkData->user_id, $amount);
+        AgentController::payAgentBalance($this->linkData->user_id, $amount);
+        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id} on sum {$amount}.");
     }
 }

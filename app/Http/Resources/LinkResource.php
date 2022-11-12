@@ -17,7 +17,7 @@ class LinkResource extends JsonResource
         return [
             'agent_id' => $this->user_id,
             'offer_id' => $this->offer_id,
-            ''
+            'type' => $this->type,
         ];
     }
 }

@@ -35,5 +35,5 @@ Route::post('/action/lose', 'App\Http\Controllers\Api\ActionController@lose')
     ->name('api.deposit');
 
 Route::get('/test/{id}', function ($id) {
-    return dd(\App\Http\Controllers\Api\LinkController::getLinkInfo($id));
+    return dd(\App\Http\Controllers\Api\LinkController::getLinkInfo($id)->offer_id);
 });
