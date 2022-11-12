@@ -35,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::resources([
         'offers' => \App\Http\Controllers\OfferController::class,
         'players' => \App\Http\Controllers\PlayersController::class,
+        'links' => \App\Http\Controllers\LinkController::class,
     ]);
 });
 

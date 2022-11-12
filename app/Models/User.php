@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Conversion::class, 'user_id');
     }
+
+    public function links(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Link::class);
+    }
 }

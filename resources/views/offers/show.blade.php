@@ -22,7 +22,9 @@
                 <div class="card">
                     <div class="card-body card-body-light">
                         <h5>Create link</h5>
-                        <form action="">
+                        <form action="{{ route('links.store') }}" method="post">
+                            @csrf
+                            <input type="text" name="offer_id" value="{{ $offer->id }}" hidden>
                             <div class="form-group mt-3">
                                 <label for="">Link title</label>
                                 <input type="text" name="title" placeholder="New link" class="form-control">
@@ -45,7 +47,7 @@
                                 <textarea name="comment" id="" cols="30" rows="4" placeholder="Comment" class="form-control mb-2"></textarea>
                             </div>
                             <div class="d-flex justify-content-start">
-                                <input type="button" value="Create" class="btn btn-warning text-black mt-2 mb-2">
+                                <input type="submit" value="Create" class="btn btn-warning text-black mt-2 mb-2">
                             </div>
                         </form>
                     </div>

@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('links', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('offer_id')->constrained('offers');
+            $table->string('title');
+            $table->text('comment', 512)->nullable();
+            $table->string('type')->default('cpa');
+            $table->string('host');
             $table->timestamps();
         });
     }

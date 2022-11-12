@@ -13,4 +13,9 @@ class Offer extends Model
     {
         return $this->hasMany(Conversion::class, 'offer_id');
     }
+
+    public function links(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Link::class);
+    }
 }

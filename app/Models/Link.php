@@ -9,8 +9,22 @@ class Link extends Model
 {
     use HasFactory;
 
-    public function user()
+    protected $fillable = [
+        'user_id',
+        'offer_id',
+        'title',
+        'comment',
+        'type',
+        'host',
+    ];
+
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function offer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Offer::class);
     }
 }
