@@ -21,11 +21,6 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body card-body-light">
-                        <div class="title-medium color-gold">Links</div>
-                        <label for="link" class="mt-3">Your personal link:</label>
-                        <input type="text" id="link" class="form-control" value="azimut777.net?partner={{ \Illuminate\Support\Facades\Auth::user()->cpa_id }}&type=cpa">
-                        <label for="share_link" class="mt-4">For reshare:</label>
-                        <input type="text" id="share_link" class="form-control" value=azimut777.net?partner={{ \Illuminate\Support\Facades\Auth::user()->cpa_id }}&type=revshare>
                     </div>
                 </div>
             </div>
