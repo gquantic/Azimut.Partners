@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('players', function (Blueprint $table) {
             $table->id();
-            $table->integer('cpa_id');
+            $table->string('cpa_id');
 
             $table->foreignId('user_id')->comment('Агент')->constrained('users');
             $table->foreignId('offer_id')->comment('Проект')->constrained('offers');
