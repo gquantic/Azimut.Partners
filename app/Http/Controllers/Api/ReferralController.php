@@ -157,7 +157,7 @@ class ReferralController extends Controller
      * @param int $cpaId
      * @return int
      */
-    public function inWhichBranchIsPerson(int $cpaId)
+    public function inWhichBranchIsPerson($cpaId)
     {
         $player = Player::query()->where('cpa_id', $cpaId)->first();
         $referralId = $player->referral_id;
