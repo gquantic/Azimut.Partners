@@ -63,6 +63,20 @@ input.form-control {
         background-color: $input-body-color;
         border-bottom-color: $color-gold;
     }
+
+    &::placeholder {
+        color: rgba(250,250,250,.5) !important;
+    }
+}
+
+textarea,
+select {
+    background-color: $input-body-color !important;
+    color: #fff !important;
+
+    &::placeholder {
+        color: rgba(250,250,250,.5) !important;
+    }
 }
 
 .title-big {
