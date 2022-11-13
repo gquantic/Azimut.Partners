@@ -56,6 +56,10 @@ class LoseController extends Controller
             $payPercent = $referralController->userPercent($this->data['player']);
         } else {
             $payPercent = 2.5;
+
+            if (count($this->player->referrals()->get()) > 1) {
+                $payPercent = $payPercent * 1.2;
+            }
         }
 
         // Тут мы должны вычесть процент по пользователю
