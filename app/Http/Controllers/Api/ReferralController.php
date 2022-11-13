@@ -142,6 +142,9 @@ class ReferralController extends Controller
         $gold = $this->isGoldTriangle($cpaId);
         $platinum = $this->isPlatinumTriangle($cpaId);
 
+        var_dump($level);
+        exit();
+
 //        return dd($gold, $platinum, $level);
 
         if ($platinum) {
@@ -161,7 +164,7 @@ class ReferralController extends Controller
     {
         $player = Player::query()->where('cpa_id', $cpaId)->first();
         $referralId = $player->referral_id;
-        $level = 2;
+        $level = 1;
 
 
         // Идём вверх
