@@ -27,7 +27,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('home', [
-            'conversions' => Conversion::query()->where('user_id', Auth::id())->with('offer')->get()
+            'conversions' => Conversion::query()->where('user_id', Auth::id())->with('offer')->orderByDesc('id')->get()
         ]);
     }
 }
