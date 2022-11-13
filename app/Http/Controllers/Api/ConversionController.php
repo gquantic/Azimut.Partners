@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 class ConversionController extends Controller
 {
-    public static function makeConversion(array $data, int $agent, int $price)
+    public static function makeConversion(array $data, int $agent, $price)
     {
         Conversion::query()->create([
             'offer_id' => 1,
