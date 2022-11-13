@@ -54,7 +54,7 @@ class LoseController extends Controller
         if ($this->data['referral'] != null && $this->data['referral'] != '') {
             $payPercent = $referralController->userPercent($this->data['player']);
         } else {
-            $payPercent = 20;
+            $payPercent = 2.5;
         }
 
 //        $topPlayer = $referralController->gotTop($this->data['player']);
