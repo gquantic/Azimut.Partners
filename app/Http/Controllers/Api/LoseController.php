@@ -31,7 +31,7 @@ class LoseController extends Controller
 
         $this->revshareConversion();
 
-        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id} on sum {$amount}.")
+        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id}.");
     }
 
     private function setPlayer()
