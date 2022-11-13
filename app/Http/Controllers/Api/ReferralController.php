@@ -161,7 +161,7 @@ class ReferralController extends Controller
     {
         $player = Player::query()->where('cpa_id', $cpaId)->first();
         $referralId = $player->referral_id;
-        $level = 2;
+        $level = 0;
 
 
         // Идём вверх

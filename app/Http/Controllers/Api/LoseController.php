@@ -52,12 +52,16 @@ class LoseController extends Controller
 //        if ($this->data['referral'] != null)
 //            return ApiController::returnError('409', 'Only main player can pay agent balance.');
 
-        // Тут мы должны вычесть процент по пользователю
-        if ($this->data['referral'] != null && $this->data['referral'] != '') {
+        if ($this->player->referral_id != null) {
             $payPercent = $referralController->userPercent($this->data['player']);
         } else {
             $payPercent = 2.5;
         }
+
+        // Тут мы должны вычесть процент по пользователю
+//        if ($this->data['referral'] != null && $this->data['referral'] != '') {
+//        } else {
+//        }
 
 //        $topPlayer = $referralController->gotTop($this->data['player']);
 //        $topPlayer = Player::query()->find($topPlayer)->
