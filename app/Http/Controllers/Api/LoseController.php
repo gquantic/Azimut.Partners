@@ -58,6 +58,8 @@ class LoseController extends Controller
             $payPercent = 2.5;
 
             $referrals = $this->player->referrals()->get();
+//            var_dump($referrals[0]);
+//            exit();
 
             /**
              * Check
@@ -68,7 +70,7 @@ class LoseController extends Controller
             else
                 $gold = false;
 
-            if ($referrals[0]->referrals() > 1 && $referrals[1]->referrals() > 1)
+            if (count($referrals[0]->referrals()->get()) > 1 && count($referrals[1]->referrals()->get()) > 1)
                 $platinum = true;
             else
                 $platinum = false;
