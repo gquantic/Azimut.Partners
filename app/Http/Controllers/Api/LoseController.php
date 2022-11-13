@@ -51,7 +51,11 @@ class LoseController extends Controller
 //            return ApiController::returnError('409', 'Only main player can pay agent balance.');
 
         // Тут мы должны вычесть процент по пользователю
-        $payPercent = $referralController->userPercent($this->data['player']);
+        if ($this->data['referral'] != null && $this->data['referral'] != '') {
+            $payPercent = $referralController->userPercent($this->data['player']);
+        } else {
+            $payPercent = 20;
+        }
 
 //        $topPlayer = $referralController->gotTop($this->data['player']);
 //        $topPlayer = Player::query()->find($topPlayer)->
