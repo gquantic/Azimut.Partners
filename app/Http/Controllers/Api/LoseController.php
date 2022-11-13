@@ -57,9 +57,31 @@ class LoseController extends Controller
         } else {
             $payPercent = 2.5;
 
-            if (count($this->player->referrals()->get()) > 1) {
+            $referrals = $this->player->referrals()->get();
+
+            /**
+             * Check
+             */
+
+            if (count($this->player->referrals()->get()) > 1)
+                $gold = true;
+            else
+                $gold = false;
+
+            if ($referrals[0]->referrals() > 1 && $referrals[1]->referrals() > 1)
+                $platinum = true;
+            else
+                $platinum = false;
+
+            if ($platinum === true) {
+                $payPercent = $payPercent * 1.5;
+            } elseif ($gold === true) {
                 $payPercent = $payPercent * 1.2;
             }
+
+            /**
+             * End
+             */
         }
 
         // Тут мы должны вычесть процент по пользователю
