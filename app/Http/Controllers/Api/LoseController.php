@@ -44,7 +44,7 @@ class LoseController extends Controller
         }
     }
 
-    private function revshareConversion(): \Illuminate\Http\JsonResponse
+    private function revshareConversion()
     {
         $referralController = new ReferralController();
 
