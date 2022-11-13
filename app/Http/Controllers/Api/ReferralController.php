@@ -23,7 +23,7 @@ class ReferralController extends Controller
     protected array $requires = [
         1 => 6,
         2 => 6,
-        3 => 7,
+        3 => 6,
         4 => 32,
         5 => 64,
     ];
