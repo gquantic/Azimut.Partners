@@ -21,7 +21,7 @@ class ReferralController extends Controller
     public array $sixLevel;
 
     protected array $requires = [
-        1 => 2,
+        1 => 3,
         2 => 6,
         3 => 16,
         4 => 32,
