@@ -19,6 +19,7 @@ class PlayersController extends Controller
             'players' => Player::query()
                                 ->where('user_id', Auth::id())
                                 ->where('referral_id', '=', null)
+                                ->orderByDesc('id')
                                 ->get()
         ]);
     }
