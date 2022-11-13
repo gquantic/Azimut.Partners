@@ -70,15 +70,17 @@ class LoseController extends Controller
             else
                 $gold = false;
 
-            if (count($referrals[0]->referrals()->get()) > 1 && count($referrals[1]->referrals()->get()) > 1)
-                $platinum = true;
-            else
-                $platinum = false;
+            if (count($this->player->referrals()->get()) > 1) {
+                if (count($referrals[0]->referrals()->get()) > 1 && count($referrals[1]->referrals()->get()) > 1)
+                    $platinum = true;
+                else
+                    $platinum = false;
 
-            if ($platinum === true) {
-                $payPercent = $payPercent * 1.5;
-            } elseif ($gold === true) {
-                $payPercent = $payPercent * 1.2;
+                if ($platinum === true) {
+                    $payPercent = $payPercent * 1.5;
+                } elseif ($gold === true) {
+                    $payPercent = $payPercent * 1.2;
+                }
             }
 
             /**
