@@ -31,7 +31,7 @@ class LoseController extends Controller
 
         $this->revshareConversion();
 
-        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id}.");
+        return ApiController::returnSuccess("Conversion created for agent {$this->data['player']}.");
     }
 
     private function setPlayer()
@@ -63,7 +63,7 @@ class LoseController extends Controller
 //        $topPlayer = Player::query()->find($topPlayer)->
 
         // Если основной игрок, то начисляем процент
-        $amount = round(($this->data['amount'] / 100) * $payPercent);
+        $amount = ($this->data['amount'] / 100) * $payPercent;
 
         ConversionController::makeConversion($this->data, $this->linkData->user_id, $amount);
         AgentController::payAgentBalance($this->linkData->user_id, $amount);
