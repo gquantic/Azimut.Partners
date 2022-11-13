@@ -30,6 +30,8 @@ class LoseController extends Controller
         }
 
         $this->revshareConversion();
+
+        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id} on sum {$amount}.")
     }
 
     private function setPlayer()
@@ -65,6 +67,7 @@ class LoseController extends Controller
 
         ConversionController::makeConversion($this->data, $this->linkData->user_id, $amount);
         AgentController::payAgentBalance($this->linkData->user_id, $amount);
-        return ApiController::returnSuccess("Conversion created for agent {$this->linkData->id} on sum {$amount}.");
+
+        return true;
     }
 }
