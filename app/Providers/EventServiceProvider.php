@@ -3,7 +3,10 @@
 namespace App\Providers;
 
 use App\Events\CreateLink;
+use App\Events\UserSendTransaction;
 use App\Listeners\CreateLinkInService;
+use App\Listeners\SendTransactionToManager;
+use App\Listeners\SendUserModerateMessage;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -19,10 +22,15 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+            SendUserModerateMessage::class,
         ],
 
         CreateLink::class => [
             CreateLinkInService::class,
+        ],
+
+        UserSendTransaction::class => [
+            SendTransactionToManager::class,
         ],
     ];
 

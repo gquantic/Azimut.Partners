@@ -22,6 +22,10 @@ Route::get('/action/pay', function () {
     return "Success";
 });
 
+Route::post('/transaction/change', 'App\Http\Controllers\TransactionController@update')
+    ->middleware('api.offer')
+    ->name('api.transaction.change');
+
 Route::post('/action/register', 'App\Http\Controllers\Api\ActionController@register')
     ->middleware('api.offer')
     ->name('api.register');
@@ -36,4 +40,51 @@ Route::post('/action/lose', 'App\Http\Controllers\Api\ActionController@lose')
 
 Route::get('/test/{id}', function ($id) {
     return dd(\App\Http\Controllers\Api\LinkController::getLinkInfo($id)->offer_id);
+});
+
+
+/**
+ * Balance
+ */
+
+Route::post('/user/balance', function (Request $request) {
+    $request->headers->set('Accept', 'application/json');
+
+    $user = \App\Models\User::query()->find($request->post('userId'));
+
+    if (!$user) {
+        return \Psy\Util\Json::encode([
+            'status' => 'error',
+            'error' => 'User not found.',
+        ]);
+    }
+
+    return \Psy\Util\Json::encode([
+        'status' => 'success',
+        'balance' => $user->balance,
+    ]);
+});
+
+/**
+ * Moderate user
+ */
+
+Route::post('/user/accept', function (Request $request) {
+    $request->headers->set('Accept', 'application/json');
+
+    $user = \App\Models\User::query()->find($request->post('userId'));
+
+    if (!$user) {
+        return \Psy\Util\Json::encode([
+            'status' => 'error',
+            'error' => 'User not found.',
+        ]);
+    }
+
+    $user->moderated = 1;
+    $user->save();
+
+    return \Psy\Util\Json::encode([
+        'status' => 'success',
+    ]);
 });

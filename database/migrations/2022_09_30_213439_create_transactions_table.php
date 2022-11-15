@@ -17,8 +17,10 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->string('type')->default('conversion_pay');
+            $table->string('to')->nullable();
+            $table->string('requisite')->nullable();
             $table->bigInteger('amount');
-            $table->string('status')->default('approved');
+            $table->string('status')->default('moderation');
             $table->timestamps();
         });
     }

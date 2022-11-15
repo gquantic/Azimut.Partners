@@ -8,6 +8,7 @@ use App\Models\Offer;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Psy\Util\Json;
 
 class OfferRequest
 {
@@ -23,7 +24,10 @@ class OfferRequest
         $offerCheckController = new OfferCheckController();
         if ($offerCheckController->check($request) === false) {
             http_response_code(401);
-            exit();
+            exit(Json::encode([
+                'status' => 'error',
+                'error' => 'Not authorized.',
+            ]));
         }
 
         return $next($request);
