@@ -64,4 +64,6 @@ Route::get('/test/{id}', function ($id) {
 
 Route::get('/controller/{id}', 'App\Http\Controllers\Api\ReferralController@checkHandles');
 
-Route::view('/wallet', 'profile.wallet');
+Route::get('/wallet', function () {
+    return view('profile.wallet', ['transactions' => \App\Models\Transaction::where('user_id', \Illuminate\Support\Facades\Auth::id())->get()]);
+});

@@ -81,6 +81,15 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($transactions as $transaction)
+                        <tr>
+                            <td>{{ $transaction->amount }}</td>
+                            <td>{{ $transaction->to }}</td>
+                            <td>{{ $transaction->requisite }}</td>
+                            <td>{{ $transaction->status }}</td>
+                            <td>{{ $transaction->created_at }}</td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
