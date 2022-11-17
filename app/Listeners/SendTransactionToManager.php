@@ -33,6 +33,7 @@ class SendTransactionToManager
             'email' => $event->transaction->user->email,
             'cashout_type' => $event->transaction->type,
             'cashout_wallet' => $event->transaction->requisite,
+            'cashout_amount' => $event->transaction->amount,
         ]);
     }
 }
