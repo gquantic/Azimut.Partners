@@ -24,7 +24,6 @@ Route::get('/action/pay', function () {
 });
 
 Route::post('/transaction/change', 'App\Http\Controllers\TransactionController@update')
-    ->middleware('api.offer')
     ->name('api.transaction.change');
 
 Route::post('/action/register', 'App\Http\Controllers\Api\ActionController@register')
