@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Events\UserSendTransaction;
+use App\Exceptions\ChangeStatusException;
+use App\Http\Controllers\Api\ApiController;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -87,13 +89,19 @@ class TransactionController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request)
     {
-        Transaction::query()->find($request->post('id'))->update([
-            'status' => $request->post('status'),
-        ]);
+        try {
+            Transaction::query()->find($request->post('id'))->update([
+                'status' => $request->post('status'),
+            ]);
+
+            return ApiController::returnSuccess(200, 'success');
+        } catch (ChangeStatusException $exception) {
+
+        }
     }
 
     /**
