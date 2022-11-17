@@ -31,7 +31,15 @@ class DepositController extends Controller
             return ApiController::returnError('409', 'Only CPA players can pay deposit.');
         }
 
-        $this->cpaConversion();
+        $cpa = $this->cpaConversion();
+
+        if ($cpa == "small") {
+            return ApiController::returnError('409', 'Minimal amount: 20$');
+        } elseif ($cpa == "already") {
+            return ApiController::returnError('409', 'Player already payed balance.');
+        } else {
+            return ApiController::returnError('409', 'Error.');
+        }
     }
 
     private function setPlayer()
@@ -48,13 +56,12 @@ class DepositController extends Controller
     {
         // Если он CPA, то сначала проверяем, были ли зачисления. Если нет, то начисляем.
         if (count($this->player->conversions) > 0) // Если конверсия уже была, то возвращаем сразу ошибку
-            return ApiController::returnError('409', 'Player already payed balance.');
+            return "already";
 
         // Если же нет, то смотрим на сумму
         if ($this->data['amount'] < 20) // если она меньше 20, то выкидываем с ошибкой
-            return ApiController::returnError('409', 'Minimal amount: 20$');
+            return "small";
 
-        exit('no');
 
         ConversionController::makeConversion($this->data, $this->linkData->user_id, 10);
         AgentController::payAgentBalance($this->linkData->user_id, 10);
