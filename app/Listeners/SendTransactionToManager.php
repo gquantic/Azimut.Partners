@@ -31,7 +31,8 @@ class SendTransactionToManager
             'userId' => $event->transaction->user_id,
             'name' => $event->transaction->user->name,
             'email' => $event->transaction->user->email,
-            'cashout_type' => "{$event->transaction->type} to {$event->transaction->requisite}",
+            'cashout_type' => $event->transaction->type,
+            'cashout_wallet' => $event->transaction->requisite,
         ]);
     }
 }
