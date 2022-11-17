@@ -26,7 +26,7 @@ class SendTransactionToManager
      */
     public function handle($event)
     {
-        $request = Http::post('https://slotsmakers.net/api/affiliate/cashout', [
+        $request = Http::post('https://slotsmakers.net/affiliate/cashout', [
             'cashout_id' => $event->transaction->id,
             'userId' => $event->transaction->user_id,
             'name' => $event->transaction->user->name,

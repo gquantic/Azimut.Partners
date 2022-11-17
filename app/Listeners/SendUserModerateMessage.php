@@ -16,7 +16,7 @@ class SendUserModerateMessage
      */
     public function handle($event)
     {
-        $request = Http::post('https://slotsmakers.net/api/affiliate/user', [
+        $request = Http::post('https://slotsmakers.net/affiliate/user', [
             'userId' => $event->user->id,
             'name' => $event->user->name,
             'email' => $event->user->email,
