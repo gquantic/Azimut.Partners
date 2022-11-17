@@ -48,7 +48,7 @@ class TransactionController extends Controller
         $transaction = Transaction::query()->create([
             'user_id' => Auth::id(),
             'amount' => $request->post('amount'),
-            'requisite' => $request->post('to'),
+            'requisite' => $request->post('requisite'),
             'type' => 'payout',
             'to' => $request->post('to'),
         ]);
