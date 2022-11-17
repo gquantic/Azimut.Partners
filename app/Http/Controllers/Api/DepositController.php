@@ -37,8 +37,6 @@ class DepositController extends Controller
             return ApiController::returnError('409', 'Minimal amount: 20$');
         } elseif ($cpa == "already") {
             return ApiController::returnError('409', 'Player already payed balance.');
-        } else {
-            return ApiController::returnError('409', 'Error.');
         }
     }
 
