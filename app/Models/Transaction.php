@@ -15,6 +15,7 @@ class Transaction extends Model
         'amount',
         'requisite',
         'type',
+        'status',
     ];
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
