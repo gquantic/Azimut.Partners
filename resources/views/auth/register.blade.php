@@ -59,7 +59,7 @@
 
                         <div class="row mb-0 mt-3">
                             <div class="d-flex align-items-center justify-content-between">
-                                <a href="">Already have account?</a>
+                                <a href="{{ route('login') }}">Already have account?</a>
                                 <button type="submit" class="btn btn-warning">
                                     {{ __('Register') }}
                                 </button>

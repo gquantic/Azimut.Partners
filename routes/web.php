@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::redirect('/', '/login');
 
 Route::get('/go/{user}/{offer}/cpa', function ($user, $offer) {
     return "Would be possible redirect to the project, but site has not yet been configured. <br> Offer: $offer, User: $user";
