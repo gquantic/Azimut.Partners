@@ -1090,9 +1090,9 @@
                                 </div>
                             </div>
                             <div class="footer__right">
-                                <a href="https://toponepartners.com/tc.html">Terms and conditions</a>
-                                <a href="https://toponepartners.com/private.html">Privacy Policy</a>
-                                <a href="https://toponepartners.com/faq.html">FAQ</a>
+                                <a href="{{ route('terms') }}">Terms and conditions</a>
+                                <a href="{{ route('privacy') }}">Privacy Policy</a>
+                                <a href="javascript:void(0);">FAQ</a>
                             </div>
                         </div>
                         <div class="footer__copy">
