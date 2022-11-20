@@ -38,13 +38,20 @@
                     <!-- Left Side Of Navbar -->
                     <div></div>
 
-                    <div class="header-links">
-                        <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
-                        <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
-                        <a href="{{ route('links.index') }}" class="menu-link">Links</a>
-{{--                        <a href="/news" class="menu-link">My profile</a>--}}
-                        <a href="/wallet" class="menu-link">Wallet</a>
-                    </div>
+                    @if (\Illuminate\Support\Facades\Auth::check())
+                        <div>
+                            <span class="badge bg-success p-3 pt-2 pb-2 mr-2 fs-5">0$ <a href="">?</a></span>
+                            <span class="badge bg-warning p-3 pt-2 pb-2 fs-5">0$ <a href="">?</a></span>
+                        </div>
+                    @else
+                        <div class="header-links">
+                            <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
+                            <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
+                            <a href="{{ route('links.index') }}" class="menu-link">Links</a>
+                            {{--                        <a href="/news" class="menu-link">My profile</a>--}}
+                            <a href="/wallet" class="menu-link">Wallet</a>
+                        </div>
+                    @endif
 
                     @if(\Illuminate\Support\Facades\Auth::check())
                         <div class="d-flex align-items-center">
@@ -96,6 +103,21 @@
                 </div>
             </div>
         </nav>
+        @if(\Illuminate\Support\Facades\Auth::check())
+            <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background: rgba(0,0,0,.08);">
+                <div class="container">
+                    <div class="row" style="margin: 0 auto;">
+                        <div class="header-links text-center">
+                            <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
+                            <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
+                            <a href="{{ route('links.index') }}" class="menu-link">Links</a>
+                            {{--                        <a href="/news" class="menu-link">My profile</a>--}}
+                            <a href="/wallet" class="menu-link">Wallet</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        @endif
 
         <main class="py-4">
             @yield('content')

@@ -2,8 +2,17 @@
 
 @section('content')
 <div class="container">
-    <!-- FIRST BLOCK -->
     <div class="row">
+        <div class="col-md-12">
+            <div style="height: 200px;width: 100%;background: rgba(0,0,0,.2);display: flex;justify-content: center;
+            align-items: center;">
+                <h5>BANNER</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIRST BLOCK -->
+    <div class="row mt-3">
         <div class="col-xl-9">
             <div class="row">
                 <div class="col-md-6">
