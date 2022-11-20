@@ -26,7 +26,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ asset('img/azimut.svg') }}" alt="" width="100px" style="width: 100px !important;">
                 </a>
 
