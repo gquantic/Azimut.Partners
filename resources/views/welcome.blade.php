@@ -128,7 +128,7 @@
                         <nav class="menu">
                             <ul>
                                 <li class="for-desktop"><a href="#aboutus">about us</a></li>
-                                <li class="for-desktop"><a href="#brands">our brands</a></li>
+{{--                                <li class="for-desktop"><a href="#brands">our brands</a></li>--}}
                                 <li class="for-desktop"><a href="#comission-plans">commission plans</a></li>
                                 <li class="for-desktop"><a href="#testimonials">testimonials</a></li>
                                 <li class="for-desktop"><a href="#contacts">contacts</a></li>
@@ -137,7 +137,7 @@
 
 
                                 <li class="for-mobile"><a href="#section1">about us</a></li>
-                                <li class="for-mobile"><a href="#section2">our brands</a></li>
+{{--                                <li class="for-mobile"><a href="#section2">our brands</a></li>--}}
                                 <li class="for-mobile"><a href="#section3">commission plans</a></li>
                                 <li class="for-mobile"><a href="#section5">testimonials</a></li>
                                 <li class="for-mobile"><a href="#section6">contacts</a></li>
@@ -180,7 +180,7 @@
                         successful cooperation
                     </div>
                 </div>
-                <a href="https://affiliates.toponepartners.com/signup.php" class="first__link">become a partner</a>
+                <a href="{{ route('register') }}" class="first__link">become a partner</a>
             </div>
             <div class="first__right">
                 <!--<div class="first__stats">-->
@@ -253,235 +253,239 @@
         </div>
     </div>
     <!-- page 3 -->
-    <div class="section fp-scrollable" id="section2">
-        <div class="brands-all">
-            <div class="brand-blocks">
-                <div class="brand-block">
-                    <div class="brand-block__inner">
-                        <div class="brand__img-wrapper">
-                            <!-- Atlantis -->
-                            <div class="la-carousel active" id="casino-slider0">
-                                <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('land/images/atlantis/la-phone.jpg')"></div>
-                                <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('land/images/atlantis/la-tab.jpg')"></div>
-                                <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('land/images/atlantis/la-lap.jpg')"></div>
-                                <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('land/images/atlantis/la-desk.jpg')"></div>
-                            </div>
-                            <!-- ElRoyal -->
-                            <div class="el-carousel" id="casino-slider">
-                                <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('land/images/elroyal/phonetop.jpg')"></div>
-                                <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('land/images/elroyal/tabtop.jpg')"></div>
-                                <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('land/images/elroyal/laptoptop.jpg')"></div>
-                                <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('land/images/elroyal/desktoptop.jpg')"></div>
-                            </div>
+{{--    <div class="section fp-scrollable" id="section2">--}}
+{{--        <div class="brands-all">--}}
+{{--            <div class="brand-blocks">--}}
+{{--                <div class="brand-block">--}}
+{{--                    <div class="brand-block__inner">--}}
+{{--                        <div class="brand__img-wrapper">--}}
+{{--                            <!-- Atlantis -->--}}
+{{--                            <div class="la-carousel active" id="casino-slider0">--}}
+{{--                                <div class="brand__img" data-device="mobile"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="tablet"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="laptop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="desktop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                            </div>--}}
+{{--                            <!-- ElRoyal -->--}}
+{{--                            <div class="el-carousel" id="casino-slider">--}}
+{{--                                <div class="brand__img" data-device="mobile"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="tablet"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="laptop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="desktop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                            </div>--}}
 
-                            <!-- RD-->
-                            <div class="rd-carousel" id="casino-slider2">
-                                <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('land/images/reddog/mobile.jpg')"></div>
-                                <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('land/images/reddog/tablet.jpg')"></div>
-                                <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('land/images/reddog/laptop.jpg')"></div>
-                                <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('land/images/reddog/desktop.jpg')"></div>
-                            </div>
+{{--                            <!-- RD-->--}}
+{{--                            <div class="rd-carousel" id="casino-slider2">--}}
+{{--                                <div class="brand__img" data-device="mobile"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="tablet"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="laptop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="desktop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                            </div>--}}
 
-                            <!-- AU-->
-                            <div class="au-carousel" id="casino-slider3">
-                                <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('land/images/aussie/mobile.jpg')"></div>
-                                <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('land/images/aussie/tablet.jpg')"></div>
-                                <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('land/images/aussie/laptop.jpg')"></div>
-                                <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('land/images/aussie/desktop.jpg')"></div>
-                            </div>
+{{--                            <!-- AU-->--}}
+{{--                            <div class="au-carousel" id="casino-slider3">--}}
+{{--                                <div class="brand__img" data-device="mobile"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="tablet"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="laptop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="desktop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                            </div>--}}
 
-                            <!-- SE-->
-                            <div class="se-carousel" id="casino-slider4">
-                                <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('land/images/slotsempire/mobile-n.jpg')"></div>
-                                <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('land/images/slotsempire/tablet-n.jpg')"></div>
-                                <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('land/images/slotsempire/laptop-n.jpg')"></div>
-                                <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('land/images/slotsempire/desktop-n.jpg')"></div>
-                            </div>
-                        </div>
-                        <div class="brand__info-wrapper">
-                            <div class="brand__info-container">
-                                <div class="brands-wrapper">
-                                    <div class="brands-title">Our brands</div>
-                                    <div class="brand__control-block">
-                                        <div class="control_btns">
-                                            <div class="cntrl-btn active" id="atlantis">
-                                                <img src="land/images/la_logo.png" alt="">
-                                                <img src="land/images/la_color.png" alt="">
-                                            </div>
-                                            <div class="cntrl-btn" id="elroyal">
-                                                <img src="land/images/el_color.png" alt="">
-                                                <img src="land/images/el_logo.png" alt="">
-                                            </div>
-                                            <div class="cntrl-btn" id="reddog">
-                                                <img src="land/images/rd_color.png" alt="">
-                                                <img src="land/images/rd_logo.png" alt="">
-                                            </div>
-                                            <div class="cntrl-btn" id="aussie">
-                                                <img src="land/images/ap_color.png" alt="">
-                                                <img src="land/images/ap_logo.png" alt="">
-                                            </div>
-                                            <div class="cntrl-btn" id="slotsempire">
-                                                <img class="cntrl-btn--width" src="land/images/se_color.png" alt="">
-                                                <img class="cntrl-btn--width" src="land/images/se_fin.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brand__info-top active">
-                                    <div class="brand__title">Las Atlantis</div>
-                                    <div class="brand__desc">
-                                        Enter the hidden city of Las Atlantis, where the friendly natives will help you to master your gaming skills. The city, where luck meets pleasure and winnings never end.
-                                        <div class="mobile-container-content">
-                                            <div class="brand__subtitle">Welcome Offers</div>
-                                            <div class="brand__content">
-                                                Welcome Campaign valid on first 5 deposits making it a max total of $14000 in bonuses!
-                                            </div>
-                                            <div class="brand__subtitle">Available Games</div>
-                                            <div class="brand__content">200+</div>
-                                            <div class="brand__subtitle">Play Options</div>
-                                            <div class="brand__content">Mobile, Instant Play, Download</div>
-                                            <div class="brand__subtitle">License Held:</div>
-                                            <div class="brand__content">Curaçao</div>
-                                            <div class="brand__info-bottom">
-                                                <div class="web__link">Website Link</div>
-                                                <a href="https://lasatlantis.com/" target="_blank" class="brand__info-link">lasatlantis.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-show-more">
-                                            more info
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brand__info-top">
-                                    <div class="brand__title">El Royale</div>
-                                    <div class="brand__desc">
-                                        Grand exclusive parties and chic atmosphere of the Roaring 20s: all this and more is waiting for you within one click! Welcome to El Royale, grab a drink and have fun!
-                                        <div class="mobile-container-content">
-                                            <div class="brand__subtitle">Welcome Offers</div>
-                                            <div class="brand__content">
-                                                Welcome Campaign valid on first 5 deposits making it a max total of $12,500 in bonuses!
-                                            </div>
-                                            <div class="brand__subtitle">Available Games</div>
-                                            <div class="brand__content">200+</div>
-                                            <div class="brand__subtitle">Play Options</div>
-                                            <div class="brand__content">Mobile, Instant Play, Download</div>
-                                            <div class="brand__subtitle">License Held:</div>
-                                            <div class="brand__content">Curaçao</div>
-                                            <div class="brand__info-bottom">
-                                                <div class="web__link">Website Link</div>
-                                                <a href="https://elroyalecasino.com/" target="_blank" class="brand__info-link">elroyalecasino.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-show-more">
-                                            more info
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brand__info-top ">
-                                    <div class="brand__title">RedDog</div>
-                                    <div class="brand__desc">
-                                        This good boy will show you the real meaning of the word awesome. RedDog will be
-                                        your trustful companion all the way to the top.
-                                        <div class="mobile-container-content">
-                                            <div class="brand__subtitle">Welcome Offers</div>
-                                            <div class="brand__content">
-                                                Welcome Campaign valid on first 5 deposits making it a
-                                                max total of $12,250 in bonuses!
-                                            </div>
-                                            <div class="brand__subtitle">Available Games</div>
-                                            <div class="brand__content">200+</div>
-                                            <div class="brand__subtitle">Play Options</div>
-                                            <div class="brand__content">Mobile, Instant Play, Download</div>
-                                            <div class="brand__subtitle">License Held:</div>
-                                            <div class="brand__content">Curaçao</div>
-                                            <div class="brand__info-bottom">
-                                                <div class="web__link">Website Link</div>
-                                                <a href="https://reddogcasino.com/en/" target="_blank" class="brand__info-link">reddogcasino.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-show-more">
-                                            more info
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brand__info-top ">
-                                    <div class="brand__title">Aussie Play</div>
-                                    <div class="brand__desc">
-                                        Stop your terrestrial boredom! Aussie, Space Cat, and Zuzu are here to make some bets. Read more about Aussie and his space gang's thrilling adventures on Aussie Play!
-                                        <div class="mobile-container-content">
-                                            <div class="brand__subtitle">Welcome Offers</div>
-                                            <div class="brand__content">
-                                                Welcome Campaign valid on first 5 deposits making it a max total of $12,500 in bonuses!
-                                            </div>
-                                            <div class="brand__subtitle">Available Games</div>
-                                            <div class="brand__content">200+</div>
-                                            <div class="brand__subtitle">Play Options</div>
-                                            <div class="brand__content">Mobile, Instant Play, Download</div>
-                                            <div class="brand__subtitle">License Held:</div>
-                                            <div class="brand__content">Curaçao</div>
-                                            <div class="brand__info-bottom">
-                                                <div class="web__link">Website Link</div>
-                                                <a href="https://aussieplay.com/" target="_blank" class="brand__info-link">aussieplay.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-show-more">
-                                            more info
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brand__info-top ">
-                                    <div class="brand__title">Slots Empire</div>
-                                    <div class="brand__desc">
-                                        Brace yourself for a huge Slots Empire invasion! This platform has some great Caesar-size plans to conquer the gambling industry, and you definitely want to be on the winning side!
-                                        <div class="mobile-container-content">
-                                            <div class="brand__subtitle">Welcome Offers</div>
-                                            <div class="brand__content">
-                                                Welcome Campaign valid on first 5 deposits making it a
-                                                max total of $12,000 in bonuses!
-                                            </div>
-                                            <div class="brand__subtitle">Available Games</div>
-                                            <div class="brand__content">200+</div>
-                                            <div class="brand__subtitle">Play Options</div>
-                                            <div class="brand__content">Mobile, Instant Play, Download</div>
-                                            <div class="brand__subtitle">License Held:</div>
-                                            <div class="brand__content">Curaçao</div>
-                                            <div class="brand__info-bottom">
-                                                <div class="web__link">Website Link</div>
-                                                <a href="https://slotsempire.com/" target="_blank" class="brand__info-link">slotsempire.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="btn btn-show-more">
-                                            more info
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                            <!-- SE-->--}}
+{{--                            <div class="se-carousel" id="casino-slider4">--}}
+{{--                                <div class="brand__img" data-device="mobile"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="tablet"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="laptop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                                <div class="brand__img" data-device="desktop"--}}
+{{--                                     style="background-image:url('https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg')"></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="brand__info-wrapper">--}}
+{{--                            <div class="brand__info-container">--}}
+{{--                                <div class="brands-wrapper">--}}
+{{--                                    <div class="brands-title">Our brands</div>--}}
+{{--                                    <div class="brand__control-block">--}}
+{{--                                        <div class="control_btns">--}}
+{{--                                            <div class="cntrl-btn active" id="atlantis">--}}
+{{--                                                <img src="land/images/la_logo.png" alt="">--}}
+{{--                                                <img src="land/images/la_color.png" alt="">--}}
+{{--                                                <img src="https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg" width="50px" alt="">--}}
+{{--                                            </div>--}}
+{{--                                            <div class="cntrl-btn" id="elroyal">--}}
+{{--                                                <img src="land/images/el_color.png" alt="">--}}
+{{--                                                <img src="land/images/el_logo.png" alt="">--}}
+{{--                                                <img src="https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg" width="50px" alt="">--}}
+{{--                                            </div>--}}
+{{--                                            <div class="cntrl-btn" id="reddog">--}}
+{{--                                                <img src="land/images/rd_color.png" alt="">--}}
+{{--                                                <img src="land/images/rd_logo.png" alt="">--}}
+{{--                                                <img src="https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg" width="50px" alt="">--}}
+{{--                                            </div>--}}
+{{--                                            <div class="cntrl-btn" id="aussie">--}}
+{{--                                                <img src="land/images/ap_color.png" alt="">--}}
+{{--                                                <img src="land/images/ap_logo.png" alt="">--}}
+{{--                                                <img src="https://cdn.shoplightspeed.com/shops/610593/files/2916194/mystery-box-mystery-box-7500.jpg" width="50px" alt="">--}}
+{{--                                            </div>--}}
+{{--                                            <div class="cntrl-btn" id="slotsempire">--}}
+{{--                                                <img class="cntrl-btn--width" src="land/images/se_color.png" alt="">--}}
+{{--                                                <img class="cntrl-btn--width" src="land/images/se_fin.png" alt="">--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="brand__info-top active">--}}
+{{--                                    <div class="brand__title">Las Atlantis</div>--}}
+{{--                                    <div class="brand__desc">--}}
+{{--                                        Enter the hidden city of Las Atlantis, where the friendly natives will help you to master your gaming skills. The city, where luck meets pleasure and winnings never end.--}}
+{{--                                        <div class="mobile-container-content">--}}
+{{--                                            <div class="brand__subtitle">Welcome Offers</div>--}}
+{{--                                            <div class="brand__content">--}}
+{{--                                                Welcome Campaign valid on first 5 deposits making it a max total of $14000 in bonuses!--}}
+{{--                                            </div>--}}
+{{--                                            <div class="brand__subtitle">Available Games</div>--}}
+{{--                                            <div class="brand__content">200+</div>--}}
+{{--                                            <div class="brand__subtitle">Play Options</div>--}}
+{{--                                            <div class="brand__content">Mobile, Instant Play, Download</div>--}}
+{{--                                            <div class="brand__subtitle">License Held:</div>--}}
+{{--                                            <div class="brand__content">Curaçao</div>--}}
+{{--                                            <div class="brand__info-bottom">--}}
+{{--                                                <div class="web__link">Website Link</div>--}}
+{{--                                                <a href="https://lasatlantis.com/" target="_blank" class="brand__info-link">lasatlantis.com</a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="btn btn-show-more">--}}
+{{--                                            more info--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="brand__info-top">--}}
+{{--                                    <div class="brand__title">El Royale</div>--}}
+{{--                                    <div class="brand__desc">--}}
+{{--                                        Grand exclusive parties and chic atmosphere of the Roaring 20s: all this and more is waiting for you within one click! Welcome to El Royale, grab a drink and have fun!--}}
+{{--                                        <div class="mobile-container-content">--}}
+{{--                                            <div class="brand__subtitle">Welcome Offers</div>--}}
+{{--                                            <div class="brand__content">--}}
+{{--                                                Welcome Campaign valid on first 5 deposits making it a max total of $12,500 in bonuses!--}}
+{{--                                            </div>--}}
+{{--                                            <div class="brand__subtitle">Available Games</div>--}}
+{{--                                            <div class="brand__content">200+</div>--}}
+{{--                                            <div class="brand__subtitle">Play Options</div>--}}
+{{--                                            <div class="brand__content">Mobile, Instant Play, Download</div>--}}
+{{--                                            <div class="brand__subtitle">License Held:</div>--}}
+{{--                                            <div class="brand__content">Curaçao</div>--}}
+{{--                                            <div class="brand__info-bottom">--}}
+{{--                                                <div class="web__link">Website Link</div>--}}
+{{--                                                <a href="https://elroyalecasino.com/" target="_blank" class="brand__info-link">elroyalecasino.com</a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="btn btn-show-more">--}}
+{{--                                            more info--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="brand__info-top ">--}}
+{{--                                    <div class="brand__title">RedDog</div>--}}
+{{--                                    <div class="brand__desc">--}}
+{{--                                        This good boy will show you the real meaning of the word awesome. RedDog will be--}}
+{{--                                        your trustful companion all the way to the top.--}}
+{{--                                        <div class="mobile-container-content">--}}
+{{--                                            <div class="brand__subtitle">Welcome Offers</div>--}}
+{{--                                            <div class="brand__content">--}}
+{{--                                                Welcome Campaign valid on first 5 deposits making it a--}}
+{{--                                                max total of $12,250 in bonuses!--}}
+{{--                                            </div>--}}
+{{--                                            <div class="brand__subtitle">Available Games</div>--}}
+{{--                                            <div class="brand__content">200+</div>--}}
+{{--                                            <div class="brand__subtitle">Play Options</div>--}}
+{{--                                            <div class="brand__content">Mobile, Instant Play, Download</div>--}}
+{{--                                            <div class="brand__subtitle">License Held:</div>--}}
+{{--                                            <div class="brand__content">Curaçao</div>--}}
+{{--                                            <div class="brand__info-bottom">--}}
+{{--                                                <div class="web__link">Website Link</div>--}}
+{{--                                                <a href="https://reddogcasino.com/en/" target="_blank" class="brand__info-link">reddogcasino.com</a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="btn btn-show-more">--}}
+{{--                                            more info--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="brand__info-top ">--}}
+{{--                                    <div class="brand__title">Aussie Play</div>--}}
+{{--                                    <div class="brand__desc">--}}
+{{--                                        Stop your terrestrial boredom! Aussie, Space Cat, and Zuzu are here to make some bets. Read more about Aussie and his space gang's thrilling adventures on Aussie Play!--}}
+{{--                                        <div class="mobile-container-content">--}}
+{{--                                            <div class="brand__subtitle">Welcome Offers</div>--}}
+{{--                                            <div class="brand__content">--}}
+{{--                                                Welcome Campaign valid on first 5 deposits making it a max total of $12,500 in bonuses!--}}
+{{--                                            </div>--}}
+{{--                                            <div class="brand__subtitle">Available Games</div>--}}
+{{--                                            <div class="brand__content">200+</div>--}}
+{{--                                            <div class="brand__subtitle">Play Options</div>--}}
+{{--                                            <div class="brand__content">Mobile, Instant Play, Download</div>--}}
+{{--                                            <div class="brand__subtitle">License Held:</div>--}}
+{{--                                            <div class="brand__content">Curaçao</div>--}}
+{{--                                            <div class="brand__info-bottom">--}}
+{{--                                                <div class="web__link">Website Link</div>--}}
+{{--                                                <a href="https://aussieplay.com/" target="_blank" class="brand__info-link">aussieplay.com</a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="btn btn-show-more">--}}
+{{--                                            more info--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="brand__info-top ">--}}
+{{--                                    <div class="brand__title">Slots Empire</div>--}}
+{{--                                    <div class="brand__desc">--}}
+{{--                                        Brace yourself for a huge Slots Empire invasion! This platform has some great Caesar-size plans to conquer the gambling industry, and you definitely want to be on the winning side!--}}
+{{--                                        <div class="mobile-container-content">--}}
+{{--                                            <div class="brand__subtitle">Welcome Offers</div>--}}
+{{--                                            <div class="brand__content">--}}
+{{--                                                Welcome Campaign valid on first 5 deposits making it a--}}
+{{--                                                max total of $12,000 in bonuses!--}}
+{{--                                            </div>--}}
+{{--                                            <div class="brand__subtitle">Available Games</div>--}}
+{{--                                            <div class="brand__content">200+</div>--}}
+{{--                                            <div class="brand__subtitle">Play Options</div>--}}
+{{--                                            <div class="brand__content">Mobile, Instant Play, Download</div>--}}
+{{--                                            <div class="brand__subtitle">License Held:</div>--}}
+{{--                                            <div class="brand__content">Curaçao</div>--}}
+{{--                                            <div class="brand__info-bottom">--}}
+{{--                                                <div class="web__link">Website Link</div>--}}
+{{--                                                <a href="https://slotsempire.com/" target="_blank" class="brand__info-link">slotsempire.com</a>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="btn btn-show-more">--}}
+{{--                                            more info--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!-- page 4 -->
     <div class="section graph-holder" id="section3">
@@ -493,6 +497,9 @@
                     about our affiliates' well-being, and we are ready to provide them with the best conditions. With
                     this being said, it's important to mention that the revenue share is available to everybody upon
                     signing up, while CPA plan is accessible consequent to the discussion with your affiliate manager.
+                    <a href="{{ route('login') }}" style="display: block;color:#ffb8b8;font-weight: 600;margin-top: 15px;">
+                        Check the information with the manager
+                    </a>
                 </div>
             </div>
             <div class="graph-wrapper">
@@ -515,14 +522,17 @@
                 <div class="tcp-title">Transparent commission plans</div>
             </div>
             <div class="tcp-blocks">
-                <div class="tcp-block">
+                <div class="tcp-block" style="background: #0061CE;">
                     <div class="tcp-block__img"><img src="land/images/icon1.jpg" alt=""></div>
-                    <div class="tcp-block__title">CPA</div>
-                    <div class="tcp-block__desc">TOP is always ready to discuss the financial model that will be the
+                    <div class="tcp-block__title" style="color:#fff;">CPA</div>
+                    <div class="tcp-block__desc" style="color:#84A8E1;">TOP is always ready to discuss the financial model that will be the
                         most favorable for both parties. Please contact your affiliate manager to get more insight on
                         the subject.
                     </div>
-
+                    <a href="{{ route('register') }}"
+                       class="tcp-block__link" style="color:#fff;border-color: #fff;">
+                        Choose plan
+                    </a>
                 </div>
                 <div class="tcp-block">
                     <div class="tcp-block__img"><img src="land/images/icon2.png" alt=""></div>
@@ -530,18 +540,21 @@
                     <div class="tcp-block__desc">With TOP affiliate program you will get up to 45% revenue share, and we
                         will make this cooperation mutually profitable.
                     </div>
-                    <a href="https://affiliates.toponepartners.com/signup.php"
+                    <a href="{{ route('register') }}"
                        class="tcp-block__link">
                         Choose plan
                     </a>
                 </div>
-                <div class="tcp-block">
+                <div class="tcp-block" style="background: #0061CE;">
                     <div class="tcp-block__img"><img src="land/images/icon3.jpg" alt=""></div>
-                    <div class="tcp-block__title">Tailored commission</div>
-                    <div class="tcp-block__desc">We appreciate creativity in creating the commission plan – so we are
+                    <div class="tcp-block__title" style="color:#fff;">Tailored commission</div>
+                    <div class="tcp-block__desc" style="color:#84A8E1;">We appreciate creativity in creating the commission plan – so we are
                         always open to discussion of some special conditions.
                     </div>
-
+                    <a href="{{ route('register') }}"
+                       class="tcp-block__link" style="color:#fff;border-color: #fff;">
+                        Choose plan
+                    </a>
                 </div>
             </div>
 
@@ -1055,7 +1068,7 @@
                         We are looking forward to welcoming you onboard, and we hope to achieve significant results
                         together!
                     </div>
-                    <a href="https://affiliates.toponepartners.com/signup.php" class="contacts__link">Join now</a>
+                    <a href="{{ route('register') }}" class="contacts__link">Join now</a>
                 </div>
             </div>
             <div class="footer">
