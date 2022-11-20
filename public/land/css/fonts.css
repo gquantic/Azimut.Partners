@@ -1,0 +1,23 @@
+/* font-family: "museo_100"; */
+@font-face {
+	font-family: "museo_100";
+	 src: url('../fonts/museo_100.eot?') format('embedded-opentype'),
+         url('../fonts/museo_100.woff') format('woff'),
+         url('../fonts/museo_100.ttf')  format('truetype');
+}
+
+/* font-family: "museo_500"; */
+@font-face {
+	font-family: "museo_500";
+	 src: url('../fonts/museo_500.eot?') format('embedded-opentype'),
+         url('../fonts/museo_500.woff') format('woff'),
+         url('../fonts/museo_500.ttf')  format('truetype');
+}
+
+/* font-family: "museo_900"; */
+@font-face {
+	font-family: "museo_900";
+	 src: url('../fonts/museo_900.eot?') format('embedded-opentype'),
+         url('../fonts/museo_900.woff') format('woff'),
+         url('../fonts/museo_900.ttf')  format('truetype');
+}
