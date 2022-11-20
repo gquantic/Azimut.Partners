@@ -1078,15 +1078,15 @@
                             <div class="footer__left">
                                 <div class="footer__conblock">
                                     <div class="footer__name">E-mail</div>
-                                    <a href="https://toponepartners.com/cdn-cgi/l/email-protection#5e333f2c353b2a3730391e2a312e31303b2e3f2c2a303b2c2d703d3133">market<span class="__cf_email__" data-cfemail="6b02050c2b1f041b04050e1b0a191f050e191845080406">[email&#160;protected]</span></a>
+                                    <a href="mailto:admin@azimut777.group">market<span class="__cf_email__" data-cfemail="6b02050c2b1f041b04050e1b0a191f050e191845080406">admin@azimut777.group</span></a>
                                 </div>
                                 <div class="footer__conblock">
                                     <div class="footer__name">phone number</div>
-                                    <a href="tel:+44-800-014-8773">+44-800-014-8773</a>
+                                    <a href="tel:+1-925-230-4059">+1-925-230-4059</a>
                                 </div>
                                 <div class="footer__conblock">
-                                    <div class="footer__name">Skype</div>
-                                    <a href="skype:marketing@toponepartners.com?call"><span class="__cf_email__" data-cfemail="355854475e50415c5b5275415a455a5b50455447415b5047461b565a58">[email&#160;protected]</span></a>
+                                    <div class="footer__name">Telegram</div>
+                                    <a href="tg://playtime_777"><span class="__cf_email__" data-cfemail="355854475e50415c5b5275415a455a5b50455447415b5047461b565a58">@playtime_777</span></a>
                                 </div>
                             </div>
                             <div class="footer__right">

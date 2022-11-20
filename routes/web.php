@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::view('/terms', 'rules.terms');
+Route::view('/privacy', 'rules.privacy');
+
 //Route::redirect('/', '/login');
 
 Route::get('/go/{user}/{offer}/cpa', function ($user, $offer) {
