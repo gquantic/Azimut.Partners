@@ -168,7 +168,7 @@
         <div class="video-wrapper">
             <div class="video-bg"></div>
             <video data-autoplay loop muted>
-                <source type="video/mp4" src="video/video.mp4">
+                <source type="video/mp4" src="/land/video/video.mp4">
             </video>
 
         </div>
@@ -262,60 +262,60 @@
                             <!-- Atlantis -->
                             <div class="la-carousel active" id="casino-slider0">
                                 <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('images/atlantis/la-phone.jpg')"></div>
+                                     style="background-image:url('land/images/atlantis/la-phone.jpg')"></div>
                                 <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('images/atlantis/la-tab.jpg')"></div>
+                                     style="background-image:url('land/images/atlantis/la-tab.jpg')"></div>
                                 <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('images/atlantis/la-lap.jpg')"></div>
+                                     style="background-image:url('land/images/atlantis/la-lap.jpg')"></div>
                                 <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('images/atlantis/la-desk.jpg')"></div>
+                                     style="background-image:url('land/images/atlantis/la-desk.jpg')"></div>
                             </div>
                             <!-- ElRoyal -->
                             <div class="el-carousel" id="casino-slider">
                                 <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('images/elroyal/phonetop.jpg')"></div>
+                                     style="background-image:url('land/images/elroyal/phonetop.jpg')"></div>
                                 <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('images/elroyal/tabtop.jpg')"></div>
+                                     style="background-image:url('land/images/elroyal/tabtop.jpg')"></div>
                                 <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('images/elroyal/laptoptop.jpg')"></div>
+                                     style="background-image:url('land/images/elroyal/laptoptop.jpg')"></div>
                                 <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('images/elroyal/desktoptop.jpg')"></div>
+                                     style="background-image:url('land/images/elroyal/desktoptop.jpg')"></div>
                             </div>
 
                             <!-- RD-->
                             <div class="rd-carousel" id="casino-slider2">
                                 <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('images/reddog/mobile.jpg')"></div>
+                                     style="background-image:url('land/images/reddog/mobile.jpg')"></div>
                                 <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('images/reddog/tablet.jpg')"></div>
+                                     style="background-image:url('land/images/reddog/tablet.jpg')"></div>
                                 <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('images/reddog/laptop.jpg')"></div>
+                                     style="background-image:url('land/images/reddog/laptop.jpg')"></div>
                                 <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('images/reddog/desktop.jpg')"></div>
+                                     style="background-image:url('land/images/reddog/desktop.jpg')"></div>
                             </div>
 
                             <!-- AU-->
                             <div class="au-carousel" id="casino-slider3">
                                 <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('images/aussie/mobile.jpg')"></div>
+                                     style="background-image:url('land/images/aussie/mobile.jpg')"></div>
                                 <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('images/aussie/tablet.jpg')"></div>
+                                     style="background-image:url('land/images/aussie/tablet.jpg')"></div>
                                 <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('images/aussie/laptop.jpg')"></div>
+                                     style="background-image:url('land/images/aussie/laptop.jpg')"></div>
                                 <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('images/aussie/desktop.jpg')"></div>
+                                     style="background-image:url('land/images/aussie/desktop.jpg')"></div>
                             </div>
 
                             <!-- SE-->
                             <div class="se-carousel" id="casino-slider4">
                                 <div class="brand__img" data-device="mobile"
-                                     style="background-image:url('images/slotsempire/mobile-n.jpg')"></div>
+                                     style="background-image:url('land/images/slotsempire/mobile-n.jpg')"></div>
                                 <div class="brand__img" data-device="tablet"
-                                     style="background-image:url('images/slotsempire/tablet-n.jpg')"></div>
+                                     style="background-image:url('land/images/slotsempire/tablet-n.jpg')"></div>
                                 <div class="brand__img" data-device="laptop"
-                                     style="background-image:url('images/slotsempire/laptop-n.jpg')"></div>
+                                     style="background-image:url('land/images/slotsempire/laptop-n.jpg')"></div>
                                 <div class="brand__img" data-device="desktop"
-                                     style="background-image:url('images/slotsempire/desktop-n.jpg')"></div>
+                                     style="background-image:url('land/images/slotsempire/desktop-n.jpg')"></div>
                             </div>
                         </div>
                         <div class="brand__info-wrapper">
