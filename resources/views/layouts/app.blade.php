@@ -24,10 +24,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Azimut.Partners') }}
+                    <img src="{{ asset('img/azimut.svg') }}" alt="" width="100px" style="width: 100px !important;">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -41,6 +41,7 @@
                     <div class="header-links">
                         <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
                         <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
+                        <a href="{{ route('links.index') }}" class="menu-link">Links</a>
 {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                         <a href="/wallet" class="menu-link">Wallet</a>
                     </div>
@@ -113,8 +114,8 @@
                 <div class="modal-body">
                     <div class="title-medium color-white">Denis</div>
                     <p class="mb-2 mt-1 text-muted">Contact with:</p>
-                    <a href="">Telegram</a>
-                    <a href="">WhatsApp</a>
+                    <a href="https://t.me/playtime_777" target="_blank">Telegram</a>
+{{--                    <a href="">WhatsApp</a>--}}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>

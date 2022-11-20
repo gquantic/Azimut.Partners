@@ -5,9 +5,16 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-body form-body">
+                <div class="card-body form-body" style="background: rgba(0,0,0,0);">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img src="{{ asset('img/azimut.svg') }}" alt="" style="width: 100px !important;margin-top: -60px;">
+                                <p style="margin-top: -15px;">AFFILIATE NETWORK</p>
+                            </div>
+                        </div>
 
                         <div class="row mb-3">
                             <div class="col-md-12">
@@ -72,3 +79,20 @@
     </div>
 </div>
 @endsection
+
+<style>
+    body {
+        background: url('/img/main-bg-lines.png') no-repeat left top/100%, url('/img/main-bg.jpg');
+        background-repeat: repeat;
+    }
+
+    nav {
+        background: rgba(0,0,0,0) !important;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"] {
+        color: #fff !important;
+        background: rgba(0,0,0,0) !important;
+        border: 1px solid rgba(250,250,250,.2) !important;
+    }
+</style>

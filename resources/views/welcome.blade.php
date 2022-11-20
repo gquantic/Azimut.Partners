@@ -1086,7 +1086,7 @@
                                 </div>
                                 <div class="footer__conblock">
                                     <div class="footer__name">Telegram</div>
-                                    <a href="tg://playtime_777"><span class="__cf_email__" data-cfemail="355854475e50415c5b5275415a455a5b50455447415b5047461b565a58">@playtime_777</span></a>
+                                    <a href="https://t.me/playtime_777"><span class="__cf_email__" data-cfemail="355854475e50415c5b5275415a455a5b50455447415b5047461b565a58">@playtime_777</span></a>
                                 </div>
                             </div>
                             <div class="footer__right">

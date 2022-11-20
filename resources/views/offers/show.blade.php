@@ -21,9 +21,12 @@
                         </div>
                         <span style="font-size: 11px;color:rgba(250,250,250,.2) !important;margin-top: -30px;">Offer id: {{ $offer->id }}</span>
 
-                        <p class="mb-2 mt-2 title-medium">
-                            <span class="color-gold">{{ $offer->award }}$ for CPA</span> or
-                            <span class="color-gold">{{ $offer->percent_award }}% for revshare</span>
+{{--                        <p class="mb-2 mt-2 title-medium">--}}
+{{--                            <span class="color-gold">{{ $offer->award }}$ for CPA</span> or--}}
+{{--                            <span class="color-gold">{{ $offer->percent_award }}% for revshare</span>--}}
+{{--                        </p>--}}
+                        <p style="margin-top: 5px;">
+                            {!! $offer->description !!}
                         </p>
                     </div>
                 </div>
