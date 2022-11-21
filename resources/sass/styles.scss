@@ -183,3 +183,13 @@ thead, tbody, tfoot, tr, td, th {
 .modal-backdrop.show {
     opacity: .95;
 }
+
+.manager-block {
+    border: 3px dotted rgba($color-gold, 30%);
+    transition: .2s;
+}
+
+.manager-block:hover {
+    border-color: rgba($color-gold, 100%);
+    border-style: dashed;
+}

@@ -19,7 +19,7 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>Balance</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0</p>
+                            <p class="mb-2 mt-2 title-big color-gold">{{ \Illuminate\Support\Facades\Auth::user()->balance }}$</p>
                             <span>15% more than last month</span>
                         </div>
                     </div>
@@ -39,7 +39,10 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>Transactions in this month</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0</p>
+                            <p class="mb-2 mt-2 title-big color-gold">
+                                {{ \App\Models\Transaction::query()->where('user_id', \Illuminate\Support\Facades\Auth::id())
+                                    ->count() }}
+                            </p>
                             <span>15% more than last month</span>
                         </div>
                     </div>
@@ -48,7 +51,8 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>Total cashout</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0$</p>
+                            <p class="mb-2 mt-2 title-big color-gold">{{ \App\Models\Transaction::query()->where('user_id', \Illuminate\Support\Facades\Auth::id())
+                                    ->sum('amount') }}$</p>
                             <span>2% less than last month</span>
                         </div>
                     </div>
@@ -68,7 +72,10 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>Registers</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0</p>
+                            <p class="mb-2 mt-2 title-big color-gold">
+                                {{ \App\Models\Player::query()->where('user_id', \Illuminate\Support\Facades\Auth::id())
+                                    ->count() }}
+                            </p>
                             <span>8% less than last month</span>
                         </div>
                     </div>
@@ -106,7 +113,10 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>CPA</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0</p>
+                            <p class="mb-2 mt-2 title-big color-gold">
+                                {{ \App\Models\Conversion::query()->where('user_id', \Illuminate\Support\Facades\Auth::id())
+                                    ->count() }}
+                            </p>
                             <span>8% less than last month</span>
                         </div>
                     </div>
@@ -115,7 +125,10 @@
                     <div class="card">
                         <div class="card-body card-body-light">
                             <h5>RevShare</h5>
-                            <p class="mb-2 mt-2 title-big color-gold">0</p>
+                            <p class="mb-2 mt-2 title-big color-gold">
+                                {{ \App\Models\Conversion::query()->where('user_id', \Illuminate\Support\Facades\Auth::id())
+                                    ->count() }}
+                            </p>
                             <span>8% less than last month</span>
                         </div>
                     </div>
@@ -123,9 +136,9 @@
             </div>
         </div>
         <div class="col-xl-3">
-            <div class="card">
+            <div class="card manager-block">
                 <div class="card-body card-body-light">
-                    <h5>Your personal manager</h5>
+                    <h5 class="color-gold">Your personal manager</h5>
                     <p style="font-weight: 600;font-size: 15px;margin-bottom: 5px;">Denis</p>
                     <p>Hello! I am Denis, and I your personal manager.
                         I will help you solve any question on weekdays since 11:00 to 20:000. Type in telegram.</p>

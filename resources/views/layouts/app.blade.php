@@ -40,8 +40,14 @@
 
                     @if (\Illuminate\Support\Facades\Auth::check())
                         <div>
-                            <span class="badge bg-success p-3 pt-2 pb-2 mr-2 fs-5">0$ <a href="">?</a></span>
-                            <span class="badge bg-warning p-3 pt-2 pb-2 fs-5">0$ <a href="">?</a></span>
+                            <span class="badge bg-success fs-5" style="height: fit-content;padding-right: 0;">
+                                <span style="margin-right: 11px;">0$</span>
+                                <span style="background: rgba(0,0,0,.2);height: 100%;padding: 5px 5px;margin-right: 0px;">
+                                    <a href="" type="button" data-toggle="modal"
+                                       data-target="#transactionsModal" style="padding: 0 5px;text-decoration: none !important;">?</a>
+                                </span>
+                            </span>
+{{--                            <span class="badge bg-warning p-3 pt-2 pb-2 fs-5">0$ <a href="">?</a></span>--}}
                         </div>
                     @else
                         <div class="header-links">
@@ -141,6 +147,33 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transactions modal -->
+    <div class="modal fade" id="transactionsModal" tabindex="-1" role="dialog" aria-labelledby="transactionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Balance details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        @foreach(\App\Models\Transaction::where('user_id', \Illuminate\Support\Facades\Auth::id())->get() as $transaction)
+                            <tr>
+                                <td>{{ $transaction->amount }}</td>
+                                <td>{{ $transaction->to }}</td>
+                                <td>{{ $transaction->requisite }}</td>
+                                <td>{{ $transaction->status }}</td>
+                                <td>{{ $transaction->created_at }}</td>
+                            </tr>
+                        @endforeach
+                    </table>
                 </div>
             </div>
         </div>
