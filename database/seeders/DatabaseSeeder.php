@@ -26,11 +26,12 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            UserSeeder::class
+            UserSeeder::class,
+            OfferSeeder::class,
         ]);
 
-        Offer::factory()
-            ->count(5)
-            ->create();
+//        Offer::factory()
+//            ->count(5)
+//            ->create();
     }
 }

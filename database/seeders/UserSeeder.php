@@ -22,6 +22,8 @@ class UserSeeder extends Seeder
             'email' => 'gapurovich05@mail.ru',
             'password' => '$2y$10$13qDQprNzutx6GKRVm0l6e3XqDIfCVrvk4JYCtLSc5q6o1V/oqC6m',
             'moderated' => 1,
+            'soc_type' => 'OK',
+            'soc_link' => 'OK',
         ]);
     }
 }
