@@ -80,6 +80,7 @@ class PlayerController extends Controller
                 'referral_id' => $this->getReferral() ?? null,
                 'name' => $data['name'] ?? '',
                 'type' => $this->linkData->type ?? 'cpa',
+                'sub_id' => $data['subId'] ?? null,
             ]);
 
             return ApiController::returnSuccess('Player saved.');

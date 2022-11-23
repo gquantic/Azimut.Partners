@@ -19,6 +19,7 @@ class ConversionController extends Controller
             'price' => $price,
             'status' => 'approved',
             'more' => [],
+            'sub_id' => $data['subId'] ?? null,
         ]);
     }
 }

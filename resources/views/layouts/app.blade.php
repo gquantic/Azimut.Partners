@@ -53,6 +53,7 @@
                         <div class="header-links">
                             <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
                             <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
+                            <a href="{{ route('streams.index') }}" class="menu-link">Streams</a>
                             <a href="{{ route('links.index') }}" class="menu-link">Links</a>
                             {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                             <a href="/wallet" class="menu-link">Wallet</a>
@@ -116,6 +117,7 @@
                         <div class="header-links text-center">
                             <a href="{{ route('home') }}" class="menu-link">Dashboard</a>
                             <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
+                            <a href="{{ route('streams.index') }}" class="menu-link">Streams</a>
                             <a href="{{ route('links.index') }}" class="menu-link">Links</a>
                             {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                             <a href="/wallet" class="menu-link">Wallet</a>

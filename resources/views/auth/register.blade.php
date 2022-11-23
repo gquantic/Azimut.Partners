@@ -64,6 +64,22 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <label for="">How can we contact you?</label>
+                                <select class="form-control" name="soc_type">
+                                    <option value="Telegram">Telegram</option>
+                                    <option value="Whatsapp">Whatsapp</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Social account" class="form-control" name="soc_link" required>
+                            </div>
+                        </div>
+
                         <div class="row mb-0 mt-3">
                             <div class="d-flex align-items-center justify-content-between">
                                 <a href="{{ route('login') }}">Already have account?</a>

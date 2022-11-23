@@ -22,6 +22,8 @@ class User extends Authenticatable
         'email',
         'password',
         'cpa_id',
+        'soc_type',
+        'soc_link',
     ];
 
     /**

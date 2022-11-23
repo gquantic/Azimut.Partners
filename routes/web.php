@@ -42,6 +42,7 @@ Route::middleware('auth')->group(function () {
         'players' => \App\Http\Controllers\PlayersController::class,
         'links' => \App\Http\Controllers\LinkController::class,
         'transactions' => \App\Http\Controllers\TransactionController::class,
+        'streams' => \App\Http\Controllers\StreamController::class,
     ]);
 });
 

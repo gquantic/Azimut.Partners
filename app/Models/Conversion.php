@@ -20,6 +20,7 @@ class Conversion extends Model
         'price',
         'status',
         'more',
+        'sub_id',
     ];
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
