@@ -34,6 +34,17 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body card-body-light">
+                        <h5 class="mb-3">Links</h5>
+
+                        @foreach($stream->links->get() as $link)
+                            
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

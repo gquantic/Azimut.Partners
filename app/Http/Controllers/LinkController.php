@@ -45,6 +45,7 @@ class LinkController extends Controller
             'comment' => $request->post('comment'),
             'type' => $request->post('type'),
             'host' => $request->post('host'),
+            'stream_id' => $request->post('stream'),
         ]);
 
         event(new CreateLink($link));

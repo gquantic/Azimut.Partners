@@ -56,6 +56,14 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label for="">Connect stream</label>
+                                <select name="stream" id="" class="form-control mb-2">
+                                    @foreach(\App\Models\Stream::where('user_id', \Illuminate\Support\Facades\Auth::id())->get() as $stream)
+                                        <option value="{{ $stream->id }}">{{ $stream->title }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <label for="">Comment</label>
                                 <textarea name="comment" id="" cols="30" rows="4" placeholder="Comment" class="form-control mb-2"></textarea>
                             </div>

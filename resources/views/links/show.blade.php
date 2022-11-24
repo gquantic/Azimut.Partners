@@ -39,6 +39,10 @@
                             <dd>{{ $link->host }}</dd>
                         </dl>
                         <dl class="text-white mb-2">
+                            <dt>Stream:</dt>
+                            <dd><a href="{{ route('streams.show', $link->stream->id) }}">{{ $link->stream->title }}</a></dd>
+                        </dl>
+                        <dl class="text-white mb-2">
                             <dt>Link:</dt>
                             <dd><a href="{{ $link->link }}" target="_blank" class="color-gold">{{ $link->link }}</a></dd>
                         </dl>

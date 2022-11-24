@@ -17,6 +17,7 @@ class Link extends Model
         'type',
         'host',
         'link',
+        'stream_id',
     ];
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -27,5 +28,10 @@ class Link extends Model
     public function offer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Offer::class);
+    }
+
+    public function stream(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Stream::class);
     }
 }
