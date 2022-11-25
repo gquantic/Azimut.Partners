@@ -38,10 +38,14 @@
                 <div class="card">
                     <div class="card-body card-body-light">
                         <h5 class="mb-3">Links</h5>
-
-                        @foreach($stream->links->get() as $link)
-                            
-                        @endforeach
+                            @foreach($stream->links as $link)
+                                <a href="{{ route('links.show', $link->id) }}" class="color-gold">
+                                    {{ $link->title }}
+                                </a>
+                                <div style="background: rgba(250,250,250,.2);height: 2px;width: 150px;border-radius: 5px;
+                                            margin-top: 5px;">
+                                </div>
+                            @endforeach
                     </div>
                 </div>
             </div>
