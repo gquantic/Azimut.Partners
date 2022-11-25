@@ -121,6 +121,13 @@
                             <a href="{{ route('links.index') }}" class="menu-link">Links</a>
                             {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                             <a href="/wallet" class="menu-link">Wallet</a>
+                            <a href="{{ route('logout') }}" class="menu-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
                         </div>
                     </div>
                 </div>
