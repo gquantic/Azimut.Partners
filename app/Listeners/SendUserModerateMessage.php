@@ -20,6 +20,8 @@ class SendUserModerateMessage
             'userId' => $event->user->id,
             'name' => $event->user->name,
             'email' => $event->user->email,
+            'soc_type' => $event->user->soc_type,
+            'soc_link' => $event->user->soc_link,
         ]);
     }
 }
