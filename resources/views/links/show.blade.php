@@ -48,7 +48,7 @@
                         </dl>
                         <dl class="text-white mb-2">
                             <dt>Link with sub id:</dt>
-                            <dd><a href="{{ $link->link }}" target="_blank" class="color-gold">{{ $link->link }}&subid=[subId]</a></dd>
+                            <dd><a href="{{ $link->link }}&subid=[subId]" target="_blank" class="color-gold">{{ $link->link }}&subid=[subId]</a></dd>
                         </dl>
                     </div>
                 </div>
