@@ -17,7 +17,7 @@ class LinkController extends Controller
      */
     public function index()
     {
-        return view('links.show', ['links' => Link::query()->where('user_id', Auth::id())->get()]);
+        return view('links.index', ['links' => Link::query()->where('user_id', Auth::id())->get()]);
     }
 
     /**
