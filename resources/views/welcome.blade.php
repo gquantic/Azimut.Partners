@@ -139,7 +139,7 @@
                                 <li class="for-mobile"><a href="#section1">about us</a></li>
 {{--                                <li class="for-mobile"><a href="#section2">our brands</a></li>--}}
                                 <li class="for-mobile"><a href="#section3">commission plans</a></li>
-                                <li class="for-mobile"><a href="#section5">testimonials</a></li>
+{{--                                <li class="for-mobile"><a href="#section5">testimonials</a></li>--}}
                                 <li class="for-mobile"><a href="#section6">contacts</a></li>
 
                                 <!--<li><a href="#">thoughts</a></li>
@@ -561,503 +561,503 @@
         </div>
     </div>
     <!-- page 6 -->
-    <div class="section" id="section5">
-        <div class="review">
+{{--    <div class="section" id="section5">--}}
+{{--        <div class="review">--}}
 
-            <div class="review-wrapper">
-                <div class="review-title">What our affiliates say</div>
-            </div>
-            <div class="owl-carousel owl-theme" id="review-slider">
-                <div class="item">
-                    <div class="review-block__desc">
-                        LCB has been working with Top One Partners since their launch. We have established a strong professional relationship so far.
-                        They have a team of responsive, efficient and professional people who make sure any required information, promo materials and assistance to our members is delivered on time which provides a foundation for a prosperous partnership in the world of online gaming.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">LCB</h3>
-                        <h4 class="review-block__link"><a href="https://lcb.org/">lcb.org</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Working with Top One Partners is always a pleasure. The affiliate business relies heavily on transparency and TopOne nailed this down with their approachable staff, easy backend and professional approach to our requests. They're a great addition to our portfolio and recommend their business to all.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">VegasSlotsOnline</h3>
-                        <h4 class="review-block__link"><a href="https://www.vegasslotsonline.com/">vegasslotsonline.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners is one of the affiliate programs we definitely recommend. We've been cooperating for some months now and all we can say is that we are happy with their performance. Our manager is very responsive and helpful with anything you need. Overall a great partner that we can highly recommend!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Chipy</h3>
-                        <h4 class="review-block__link"><a href="https://chipy.com/">chipy.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Since working with Top One Partners we've seen high-conversions and growth every month. The team at Top One Partners are also very helpful, professional, and go above and beyond to make sure we have all the tools and material we need to be successful. We look forward to a long and fruitful relationship with Top One Partners!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">NoDepositBonus</h3>
-                        <h4 class="review-block__link"><a href="https://www.nodepositbonus.cc/">nodepositbonus.cc</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We needed something fresh for our RTG brands. With their ultra modern look Top One Partners have created the perfect brand for players looking for non outdated RTG gaming.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casinowhizz</h3>
-                        <h4 class="review-block__link"><a href="https://casinowhizz.com/">casinowhizz.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners provides an excellent service with friendly and efficient affiliate managers. Their brands are dynamic and popular with our visitors.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">NoDepositRewards</h3>
-                        <h4 class="review-block__link"><a href="http://www.nodepositrewards.com/">nodepositrewards.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We are very excited about our partnership with Top One. Their enthusiasm and readiness to assist has been encouraging and the brands are of a high quality.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">NoDeposit365</h3>
-                        <h4 class="review-block__link"><a href="https://www.nodeposit365.com/">nodeposit365.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners is highly recommended from us. The affiliate team is very knowledgeable, supportive, reliable and respond to all our worries and queries quickly and surely. You definitely won't regret choosing TopOnePartners
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casino-on-line</h3>
-                        <h4 class="review-block__link"><a href="http://www.casino-on-line.com/">casino-on-line.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Such a great team behind this platform! We're excited to see a fresh take on the RTG casino, extremely mobile friendly and converts excellently, highly recommended!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">CasinoBonusesIndex</h3>
-                        <h4 class="review-block__link"><a href="https://www.casinobonusesindex.com/">casinobonusesindex.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners offers new casinos with great RTG brands for our visitors. The affiliate team is professional, responsive, helpful and knowledgeable. We highly recommend Top One Partners to work with
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Quickieboost</h3>
-                        <h4 class="review-block__link"><a href="http://www.quickieboost.com/">quickieboost.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners are professional and dedicated to building a partnership. From day one they have been very attentive, helpful and open to trying new ideas. We certainly recommend Top One Partners and their amazing team.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casino Bonuses Now</h3>
-                        <h4 class="review-block__link"><a href="https://www.casinobonusesnow.com/">casinobonusesnow.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        It's not hard to spot a top-notch operation. The Top One team runs some of the best looking and converting brands around. Their affiliate team match up to that same level. Great program.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casinoshortlist</h3>
-                        <h4 class="review-block__link"><a href="https://www.casinoshortlist.org/">casinoshortlist.org</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We love the Top One Partners brands and so do our players. The casinos are really popular and the affiliate team have been first-class in all our interactions with them.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Australian Casino Club</h3>
-                        <h4 class="review-block__link"><a href="http://www.australiancasinoclub.com/">australiancasinoclub.com </a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Working with Top One Partners is great. They are responsive, professional, insightful and all these are ingredients for success
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casino Info</h3>
-                        <h4 class="review-block__link"><a href="https://www.casino.info/">casino.info</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners may be one of the newer program around but the team effort in working with us to bring the brands up to speed is top notch.
-                        Our partnership has been fruitful and productive so far. We totally recommend promotion brands represented by Top One Partners.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Сasino Bonus Codes 365</h3>
-                        <h4 class="review-block__link"><a href="https://casinobonuscodes365.com/">сasinobonuscodes365</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Looking back, establishing a close partnership with Top One Partners was one of our best decisions as a gambling affiliate.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">USA Online Casino</h3>
-                        <h4 class="review-block__link"><a href="http://www.usaonlinecasino.com/">usaonlinecasino.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        TopOnePartners is a great affiliate program, which is an honor for many partners to join. And we are one of them. The program includes several casinos known in the world of gambling and is famous for its honesty and openness, which is an important moment in this business.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">SlotsSpot</h3>
-                        <h4 class="review-block__link"><a href="https://slotsspot.com/">slotsspot.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We have been working with Top One Partners for 4 months now and have received fantastic results. Their affiliate managers are always friendly and supportive.
-                        I'm really satisfied with our partnership and plan to stick with these guys.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Icium</h3>
-                        <h4 class="review-block__link"><a href="https://www.icium.org/">icium.org</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners have a colorful portfolio of fun and innovative casino brands that live up to their name. They offer a great service and amazing promotions to their casino players. We are very satisfied with our partnership and we would highly recommend them!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">CasinoEnLíneaHEX</h3>
-                        <h4 class="review-block__link"><a href="https://casinoenlineahex.com/casinos-online/">casinoenlineahex.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners is a great affiliate with perfect conditions and commissions. They have a very reliable and professional team. CasinoHEX is happy to promote El Royale casino for South Africans as it offers cool promotions for players and a wide variety of games.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">South African CasinoHEX</h3>
-                        <h4 class="review-block__link"><a href="https://casinohex.co.za/online-casinos/">casinohex.co.za</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Our CasinoDeps team is really happy to partner up with Top One Partners. They have launched many good operators and continue to grow. Their brands like Aussie Play and Red Dog are keys to success on New Zealand and Australian markets. Join it and get a professional approach you've never had!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">CasinoDeps</h3>
-                        <h4 class="review-block__link"><a href="https://casinodeps.co.nz/real-money-casinos/">casinodeps.co.nz</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We just love the design of their casinos, but what's more important is that our players are insane about Top One Partners' casino brands. The conversion was great right from the start. If you are not working with Top One yet - you should.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">SlotsUp</h3>
-                        <h4 class="review-block__link"><a href="https://www.slotsup.com">slotsup.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        What we love most about working with Top One Partners is their team. They have always responded promptly whenever we have needed help.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">NoDepositKings</h3>
-                        <h4 class="review-block__link"><a href="https://www.nodepositkings.com/">nodepositkings.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Here at Pokiesportal.com, there are only a handful of RTG casinos that fulfill our requirements and Top One Partners are definitely on top of the game.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">PokiesPortal</h3>
-                        <h4 class="review-block__link"><a href="https://pokiesportal.com">PokiesPortal.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        TopOnePartners has been an excellent program to work with. Their response time to email inquiries is by far the fastest. Their brands convert well and their payments are on time. Reporting is also top notch. Well done!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">MobileCasinoParty</h3>
-                        <h4 class="review-block__link"><a href="https://www.mobilecasinoparty.com/">MobileCasinoParty.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Partnership with Top One Partners has been a very good and beneficial experience to us so far, and we highly appreciate their brands with very good reputation, conversion rate, good selection of games, live chat support, many allowed countries. Very professional manager makes our partnership a real pleasure. Top One Partners are Top.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">CasinoGuru</h3>
-                        <h4 class="review-block__link"><a href="https://casino.guru">casino.guru</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We at Casinos Analyzer have just started working with Top One Partners. They provided us with all the necessary information we requested regarding their brands and huge variety of bonuses. We consider their brands among the top Best Online Casinos. It's a pleasure to work with such a professional team!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casinos Analyzer</h3>
-                        <h4 class="review-block__link"><a href="https://casinosanalyzer.com/online-casinos ">casinosanalyzer.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners (TOP) has shown tremendous support for GambleDex - demonstrated through their indepth industry knowledge and professionalism. Their brands are among the best in conversions, which is undoubtedly due to the quality that they provide. We really appreciate the partnership that we have established with Top One Partners. Well done and thank you TOP!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Gambledex</h3>
-                        <h4 class="review-block__link"><a href="https://www.gambledex.com/">gambledex.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We need to be honest and say that Top One Partners is one of the best affiliates that we're working with. Their brands skyrocket our conversions and their affiliate team is simply great and on top of everything.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Mapleslot</h3>
-                        <h4 class="review-block__link"><a href="https://www.mapleslot.com/">mapleslot.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        At CasinoWatch we are very happy to be promoting the brands of Top One Partners. The online casinos are just the right fit for our markets and customers, and we simply love them for that. We highly recommend working with them!
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Casinowatch</h3>
-                        <h4 class="review-block__link"><a href="https://www.casinowatch.co.nz/">casinowatch.co.nz</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We have been working with Top One Partners for a while now and are happy with the results. Their affiliate managers are always available and provide first-class service. We can definitely recommend TopOnePartners to other affiliates especially if you are targeting the US, AU, CA markets. Their brands perfectly fit into those markets.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">All Online Casinos List</h3>
-                        <h4 class="review-block__link"><a href="https://www.allonlinecasinoslist.com/">allonlinecasinoslist.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        In terms of professionalism and helpfulness, the team of Top One Partners is exceptional.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Nodeposit365</h3>
-                        <h4 class="review-block__link"><a href="https://www.nodeposit365.com">nodeposit365.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Working with Top One Partners as an affiliate partner has been a pleasure. Their trusted, reliable brand means that our players feel comfortable and love playing their games. They have also helped us to boost revenue and conversion rates. We have worked with Top One for several years and we hope that our partnership will continue for a long time to come.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">AUScasinos</h3>
-                        <h4 class="review-block__link"><a href="https://www.auscasinos.com">auscasinos.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Working with Top One Partners has been a pleasure from the beginning. We've had great service from the start which helped us hit the ground running with excellent promotions, which led to an amazing conversion rate.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Directory of Slots</h3>
-                        <h4 class="review-block__link"><a href="https://www.directoryofslots.com/">directoryofslots.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        As an affiliate that values providing quality gaming to players, WagerDex is extremely happy to partner TOP One Partners. TOP One Partner Team have been exemplary with their professionalism.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">WagerDex</h3>
-                        <h4 class="review-block__link"><a href="https://www.wagerdex.com/">wagerdex.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        Top One Partners is one of the best affiliate programs if you need a modern RTG casinos. Honesty, on time payments, and the fact that these casinos convert like crazy - that's all about Top One Partners! It's pleasure to work with them.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">MINdepositcasinos</h3>
-                        <h4 class="review-block__link"><a href="https://mindepositcasinos.com/">mindepositcasinos.com</a></h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-block__desc">
-                        We are happy to work close with TopOnePartners, and are really looking forward to develop this partnership further. We can only recommend to work with them.
-                    </div>
-                    <div class="review-block__title">
-                        <h3 class="review-block__article">Kryptocasino</h3>
-                        <h4 class="review-block__link"><a href="https://www.kryptocasino.me/">kryptocasino.me/</a></h4>
-                    </div>
-                </div>
+{{--            <div class="review-wrapper">--}}
+{{--                <div class="review-title">What our affiliates say</div>--}}
+{{--            </div>--}}
+{{--            <div class="owl-carousel owl-theme" id="review-slider">--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        LCB has been working with Top One Partners since their launch. We have established a strong professional relationship so far.--}}
+{{--                        They have a team of responsive, efficient and professional people who make sure any required information, promo materials and assistance to our members is delivered on time which provides a foundation for a prosperous partnership in the world of online gaming.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">LCB</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://lcb.org/">lcb.org</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Working with Top One Partners is always a pleasure. The affiliate business relies heavily on transparency and TopOne nailed this down with their approachable staff, easy backend and professional approach to our requests. They're a great addition to our portfolio and recommend their business to all.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">VegasSlotsOnline</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.vegasslotsonline.com/">vegasslotsonline.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners is one of the affiliate programs we definitely recommend. We've been cooperating for some months now and all we can say is that we are happy with their performance. Our manager is very responsive and helpful with anything you need. Overall a great partner that we can highly recommend!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Chipy</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://chipy.com/">chipy.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Since working with Top One Partners we've seen high-conversions and growth every month. The team at Top One Partners are also very helpful, professional, and go above and beyond to make sure we have all the tools and material we need to be successful. We look forward to a long and fruitful relationship with Top One Partners!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">NoDepositBonus</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.nodepositbonus.cc/">nodepositbonus.cc</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We needed something fresh for our RTG brands. With their ultra modern look Top One Partners have created the perfect brand for players looking for non outdated RTG gaming.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casinowhizz</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinowhizz.com/">casinowhizz.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners provides an excellent service with friendly and efficient affiliate managers. Their brands are dynamic and popular with our visitors.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">NoDepositRewards</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="http://www.nodepositrewards.com/">nodepositrewards.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We are very excited about our partnership with Top One. Their enthusiasm and readiness to assist has been encouraging and the brands are of a high quality.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">NoDeposit365</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.nodeposit365.com/">nodeposit365.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners is highly recommended from us. The affiliate team is very knowledgeable, supportive, reliable and respond to all our worries and queries quickly and surely. You definitely won't regret choosing TopOnePartners--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casino-on-line</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="http://www.casino-on-line.com/">casino-on-line.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Such a great team behind this platform! We're excited to see a fresh take on the RTG casino, extremely mobile friendly and converts excellently, highly recommended!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">CasinoBonusesIndex</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.casinobonusesindex.com/">casinobonusesindex.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners offers new casinos with great RTG brands for our visitors. The affiliate team is professional, responsive, helpful and knowledgeable. We highly recommend Top One Partners to work with--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Quickieboost</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="http://www.quickieboost.com/">quickieboost.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners are professional and dedicated to building a partnership. From day one they have been very attentive, helpful and open to trying new ideas. We certainly recommend Top One Partners and their amazing team.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casino Bonuses Now</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.casinobonusesnow.com/">casinobonusesnow.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        It's not hard to spot a top-notch operation. The Top One team runs some of the best looking and converting brands around. Their affiliate team match up to that same level. Great program.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casinoshortlist</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.casinoshortlist.org/">casinoshortlist.org</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We love the Top One Partners brands and so do our players. The casinos are really popular and the affiliate team have been first-class in all our interactions with them.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Australian Casino Club</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="http://www.australiancasinoclub.com/">australiancasinoclub.com </a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Working with Top One Partners is great. They are responsive, professional, insightful and all these are ingredients for success--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casino Info</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.casino.info/">casino.info</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners may be one of the newer program around but the team effort in working with us to bring the brands up to speed is top notch.--}}
+{{--                        Our partnership has been fruitful and productive so far. We totally recommend promotion brands represented by Top One Partners.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Сasino Bonus Codes 365</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinobonuscodes365.com/">сasinobonuscodes365</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Looking back, establishing a close partnership with Top One Partners was one of our best decisions as a gambling affiliate.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">USA Online Casino</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="http://www.usaonlinecasino.com/">usaonlinecasino.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        TopOnePartners is a great affiliate program, which is an honor for many partners to join. And we are one of them. The program includes several casinos known in the world of gambling and is famous for its honesty and openness, which is an important moment in this business.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">SlotsSpot</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://slotsspot.com/">slotsspot.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We have been working with Top One Partners for 4 months now and have received fantastic results. Their affiliate managers are always friendly and supportive.--}}
+{{--                        I'm really satisfied with our partnership and plan to stick with these guys.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Icium</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.icium.org/">icium.org</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners have a colorful portfolio of fun and innovative casino brands that live up to their name. They offer a great service and amazing promotions to their casino players. We are very satisfied with our partnership and we would highly recommend them!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">CasinoEnLíneaHEX</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinoenlineahex.com/casinos-online/">casinoenlineahex.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners is a great affiliate with perfect conditions and commissions. They have a very reliable and professional team. CasinoHEX is happy to promote El Royale casino for South Africans as it offers cool promotions for players and a wide variety of games.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">South African CasinoHEX</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinohex.co.za/online-casinos/">casinohex.co.za</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Our CasinoDeps team is really happy to partner up with Top One Partners. They have launched many good operators and continue to grow. Their brands like Aussie Play and Red Dog are keys to success on New Zealand and Australian markets. Join it and get a professional approach you've never had!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">CasinoDeps</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinodeps.co.nz/real-money-casinos/">casinodeps.co.nz</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We just love the design of their casinos, but what's more important is that our players are insane about Top One Partners' casino brands. The conversion was great right from the start. If you are not working with Top One yet - you should.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">SlotsUp</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.slotsup.com">slotsup.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        What we love most about working with Top One Partners is their team. They have always responded promptly whenever we have needed help.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">NoDepositKings</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.nodepositkings.com/">nodepositkings.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Here at Pokiesportal.com, there are only a handful of RTG casinos that fulfill our requirements and Top One Partners are definitely on top of the game.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">PokiesPortal</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://pokiesportal.com">PokiesPortal.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        TopOnePartners has been an excellent program to work with. Their response time to email inquiries is by far the fastest. Their brands convert well and their payments are on time. Reporting is also top notch. Well done!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">MobileCasinoParty</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.mobilecasinoparty.com/">MobileCasinoParty.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Partnership with Top One Partners has been a very good and beneficial experience to us so far, and we highly appreciate their brands with very good reputation, conversion rate, good selection of games, live chat support, many allowed countries. Very professional manager makes our partnership a real pleasure. Top One Partners are Top.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">CasinoGuru</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casino.guru">casino.guru</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We at Casinos Analyzer have just started working with Top One Partners. They provided us with all the necessary information we requested regarding their brands and huge variety of bonuses. We consider their brands among the top Best Online Casinos. It's a pleasure to work with such a professional team!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casinos Analyzer</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://casinosanalyzer.com/online-casinos ">casinosanalyzer.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners (TOP) has shown tremendous support for GambleDex - demonstrated through their indepth industry knowledge and professionalism. Their brands are among the best in conversions, which is undoubtedly due to the quality that they provide. We really appreciate the partnership that we have established with Top One Partners. Well done and thank you TOP!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Gambledex</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.gambledex.com/">gambledex.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We need to be honest and say that Top One Partners is one of the best affiliates that we're working with. Their brands skyrocket our conversions and their affiliate team is simply great and on top of everything.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Mapleslot</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.mapleslot.com/">mapleslot.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        At CasinoWatch we are very happy to be promoting the brands of Top One Partners. The online casinos are just the right fit for our markets and customers, and we simply love them for that. We highly recommend working with them!--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Casinowatch</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.casinowatch.co.nz/">casinowatch.co.nz</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We have been working with Top One Partners for a while now and are happy with the results. Their affiliate managers are always available and provide first-class service. We can definitely recommend TopOnePartners to other affiliates especially if you are targeting the US, AU, CA markets. Their brands perfectly fit into those markets.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">All Online Casinos List</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.allonlinecasinoslist.com/">allonlinecasinoslist.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        In terms of professionalism and helpfulness, the team of Top One Partners is exceptional.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Nodeposit365</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.nodeposit365.com">nodeposit365.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Working with Top One Partners as an affiliate partner has been a pleasure. Their trusted, reliable brand means that our players feel comfortable and love playing their games. They have also helped us to boost revenue and conversion rates. We have worked with Top One for several years and we hope that our partnership will continue for a long time to come.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">AUScasinos</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.auscasinos.com">auscasinos.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Working with Top One Partners has been a pleasure from the beginning. We've had great service from the start which helped us hit the ground running with excellent promotions, which led to an amazing conversion rate.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Directory of Slots</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.directoryofslots.com/">directoryofslots.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        As an affiliate that values providing quality gaming to players, WagerDex is extremely happy to partner TOP One Partners. TOP One Partner Team have been exemplary with their professionalism.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">WagerDex</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.wagerdex.com/">wagerdex.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        Top One Partners is one of the best affiliate programs if you need a modern RTG casinos. Honesty, on time payments, and the fact that these casinos convert like crazy - that's all about Top One Partners! It's pleasure to work with them.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">MINdepositcasinos</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://mindepositcasinos.com/">mindepositcasinos.com</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="item">--}}
+{{--                    <div class="review-block__desc">--}}
+{{--                        We are happy to work close with TopOnePartners, and are really looking forward to develop this partnership further. We can only recommend to work with them.--}}
+{{--                    </div>--}}
+{{--                    <div class="review-block__title">--}}
+{{--                        <h3 class="review-block__article">Kryptocasino</h3>--}}
+{{--                        <h4 class="review-block__link"><a href="https://www.kryptocasino.me/">kryptocasino.me/</a></h4>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-            </div>
+{{--            </div>--}}
 
-        </div>
-        <div class="testimonials">
-            <div class="item">
-                <a href="http://affiliateguarddog.com/" target="_blank"><img src="land/images/testimonials/agd1.jpg" alt="affiliateguarddog"></a>
-            </div>
-            <div class="item">
-                <a href="http://lcb.org/" target="_blank"><img src="land/images/testimonials/lcb2.png" alt="lcb"></a>
-            </div>
-            <div class="item">
-                <a href="https://chipy.com/" target="_blank"><img src="land/images/testimonials/bfcl3.png" alt="chipy"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.slotsup.com/online-casinos" target="_blank"><img src="land/images/testimonials/SlotsUp4.png" alt="SlotsUp"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodepositbonus.cc/" target="_blank"><img src="land/images/testimonials/ndbc5.png" alt="nodepositbonus"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodeposit365.com/" target="_blank"><img src="land/images/testimonials/nd365_8.png" alt="nodeposit365"></a>
-            </div>
-            <div class="item middle-item">
-                <a href="http://vegasslotsonline.com/" target="_blank"><img src="land/images/testimonials/vso7.png" alt="vegasslotsonline"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinobonuscodes365.com/" target="_blank"><img src="land/images/testimonials/cbc365-logo.png" alt="casinobonuscodes365"></a>
-            </div>
-            <div class="item middle-item">
-                <a href="https://pokiesportal.com" target="_blank"><img src="land/images/testimonials/Pokiesportal.com.png" alt="pokiesportal"></a>
-            </div>
-            <div class="item long-item">
-                <a href="https://www.usaonlinecasino.com" target="_blank"><img src="land/images/testimonials/usa.png" alt="usaonlinecasino"></a>
-            </div>
-            <div class="item">
-                <a href="https://slotsspot.com/" target="_blank"><img src="land/images/testimonials/slotsspot_logo.png" alt="slots spot"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.casinorankings.com/" target="_blank"><img src="land/images/testimonials/casino_rankings.png" alt="casino rankings"></a>
-            </div>
-        </div>
-        <div class="testimonials">
-            <div class="item">
-                <a href="https://casino.guru/ " target="_blank"><img src="land/images/testimonials/casinoguru.png" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="https://www.casinowatch.co.nz/" target="_blank"><img src="land/images/testimonials/CasinoWatch.png" alt=""></a>
-            </div>
-            <div class="item">
-                <a href="https://crickeyslots.com/casino/" target="_blank"><img src="land/images/testimonials/crickeyslots.png" alt="online casinos at Crickeyslots"></a>
-            </div>
-            <div class="item long-item last-row">
-                <a href="https://www.casino.info" target="_blank"><img src="land/images/testimonials/n-ci.jpg" alt="casino"></a>
-            </div>
-            <div class="item">
-                <a href="http://www.nodepositrewards.com/" target="_blank"><img src="land/images/testimonials/ndr-approved10.png" alt="nodepositrewards"></a>
-            </div>
-            <div class="item">
-                <a href="http://www.casino-on-line.com/" target="_blank"><img src="land/images/testimonials/Casino-on-line_com9.png" alt="casino-on-line"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.icium.org/casino-bonuses/" target="_blank"><img src="land/images/testimonials/icium.png" alt="icium"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.casinobonusesindex.com/" target="_blank"><img src="land/images/testimonials/n-cb.png" alt="casinobonusesindex"></a>
-            </div>
-            <div class="item">
-                <a href="http://www.quickieboost.com/" target="_blank"><img src="land/images/testimonials/n-q.png" alt="quickieboost"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.casinoshortlist.org" target="_blank"><img src="land/images/testimonials/n-csl.png" alt="Best Online Casinos"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinosanalyzer.com/online-casinos " target="_blank"><img src="land/images/testimonials/analyzer.png" alt="Casinos analyzer"></a>
-            </div>
-        </div>
-        <div class="testimonials">
-            <div class="item">
-                <a href="https://www.casinobonusesnow.com/" target="_blank"><img src="land/images/testimonials/n-cbn.jpg" alt="casinobonusesnow"></a>
-            </div>
-            <div class="item middle-item">
-                <a href="http://casinowhizz.com" target="_blank"><img src="land/images/testimonials/caswhizzz6.png" alt="casinowhizz"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.allfreechips.com/" target="_blank"><img src="land/images/testimonials/AllFreeChips.png" alt="AllFreeChips"></a>
-            </div>
-            <div class="item">
-                <a href="https://sistersitesindex.com/" target="_blank"><img src="land/images/testimonials/SisterSitesIndex.png" alt="SisterSitesIndex"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.newbonuses.com/" target="_blank"><img src="land/images/testimonials/seal.png" alt="seal"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinoenlineahex.com/casinos-online/" target="_blank"><img src="land/images/testimonials/casinoenlineahex-logo.svg" alt="casinoenlineahex"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinohex.co.za/online-casinos/" target="_blank"><img src="land/images/testimonials/casinohex.png" alt="casinohex"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinodeps.co.nz/real-money-casinos/" target="_blank"><img src="land/images/testimonials/nz-casinodeps-logo.png" alt="nz-casinodeps"></a>
-            </div>
-            <div class="item long-item last-row">
-                <a href="http://www.australiancasinoclub.com/" target="_blank"><img src="land/images/testimonials/n-a.png" alt="Best NEw Online Casino Sites"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodepositkings.com/" target="_blank"><img src="land/images/testimonials/ndk-approved.png" alt="ndk-approved"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodeposit.guide/" target="_blank"><img src="land/images/testimonials/nodepositguide.jpg" alt="nodeposit.guide"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodepositworld.com/" target="_blank"><img src="land/images/testimonials/nodepositworld.jpg" alt="nodepositworld.com"></a>
-            </div>
-        </div>
-        <div class="testimonials">
-            <div class="item middle-item">
-                <a href="https://www.mobilecasinoparty.com" target="_blank"><img src="land/images/testimonials/MCPLogo.png" alt="MobileCasinoParty"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.letsgambleusa.com/" target="_blank"><img src="land/images/testimonials/lets_gamble_usa-2.png" alt="lets gamble usa"></a>
-            </div>
-            <div class="item">
-                <a href="https://casinogurus.com/au/" target="_blank"><img src="land/images/testimonials/top-perfecto-logo.png" alt="casino gurus"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.gambledex.com/" target="_blank"><img src="land/images/testimonials/gambledex.jpg" alt="gambledex"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.mapleslot.com/" target="_blank"><img src="land/images/testimonials/MapleSlot.png" alt="MapleSlot"></a>
-            </div>
-            <div class="item long-item">
-                <a href="https://www.allonlinecasinoslist.com/" target="_blank"><img src="land/images/testimonials/allonlinecasinoslist.png" alt="allonlinecasinoslist"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodeposit365.com" target="_blank"><img src="land/images/testimonials/nodeposit365.png" alt="nodeposit365"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.nodepositfan.com" target="_blank"><img src="land/images/testimonials/nodepositfan.jpg" alt="nodepositfan.com"></a>
-            </div>
-            <div class="item long-item">
-                <a href="https://www.auscasinos.com/" target="_blank"><img src="land/images/testimonials/AUScasino.png" alt="AUScasino"></a>
-            </div>
-            <div class="item long-item">
-                <a href="https://www.directoryofslots.com/" target="_blank"><img src="land/images/testimonials/directory_of_slots.png" alt="directory_of_slots"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.wagerdex.com/" target="_blank"><img src="land/images/testimonials/wagerdex.png" alt="wagerdex"></a>
-            </div>
-            <div class="item">
-                <a href="https://www.mindepositcasinos.com/" target="_blank"><img src="land/images/testimonials/mindepositcasinos.png" alt="mindepositcasinos"></a>
-            </div>
-        </div>
-    </div>
+{{--        </div>--}}
+{{--        <div class="testimonials">--}}
+{{--            <div class="item">--}}
+{{--                <a href="http://affiliateguarddog.com/" target="_blank"><img src="land/images/testimonials/agd1.jpg" alt="affiliateguarddog"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="http://lcb.org/" target="_blank"><img src="land/images/testimonials/lcb2.png" alt="lcb"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://chipy.com/" target="_blank"><img src="land/images/testimonials/bfcl3.png" alt="chipy"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.slotsup.com/online-casinos" target="_blank"><img src="land/images/testimonials/SlotsUp4.png" alt="SlotsUp"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodepositbonus.cc/" target="_blank"><img src="land/images/testimonials/ndbc5.png" alt="nodepositbonus"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodeposit365.com/" target="_blank"><img src="land/images/testimonials/nd365_8.png" alt="nodeposit365"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item middle-item">--}}
+{{--                <a href="http://vegasslotsonline.com/" target="_blank"><img src="land/images/testimonials/vso7.png" alt="vegasslotsonline"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinobonuscodes365.com/" target="_blank"><img src="land/images/testimonials/cbc365-logo.png" alt="casinobonuscodes365"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item middle-item">--}}
+{{--                <a href="https://pokiesportal.com" target="_blank"><img src="land/images/testimonials/Pokiesportal.com.png" alt="pokiesportal"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item">--}}
+{{--                <a href="https://www.usaonlinecasino.com" target="_blank"><img src="land/images/testimonials/usa.png" alt="usaonlinecasino"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://slotsspot.com/" target="_blank"><img src="land/images/testimonials/slotsspot_logo.png" alt="slots spot"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.casinorankings.com/" target="_blank"><img src="land/images/testimonials/casino_rankings.png" alt="casino rankings"></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="testimonials">--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casino.guru/ " target="_blank"><img src="land/images/testimonials/casinoguru.png" alt=""></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.casinowatch.co.nz/" target="_blank"><img src="land/images/testimonials/CasinoWatch.png" alt=""></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://crickeyslots.com/casino/" target="_blank"><img src="land/images/testimonials/crickeyslots.png" alt="online casinos at Crickeyslots"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item last-row">--}}
+{{--                <a href="https://www.casino.info" target="_blank"><img src="land/images/testimonials/n-ci.jpg" alt="casino"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="http://www.nodepositrewards.com/" target="_blank"><img src="land/images/testimonials/ndr-approved10.png" alt="nodepositrewards"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="http://www.casino-on-line.com/" target="_blank"><img src="land/images/testimonials/Casino-on-line_com9.png" alt="casino-on-line"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.icium.org/casino-bonuses/" target="_blank"><img src="land/images/testimonials/icium.png" alt="icium"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.casinobonusesindex.com/" target="_blank"><img src="land/images/testimonials/n-cb.png" alt="casinobonusesindex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="http://www.quickieboost.com/" target="_blank"><img src="land/images/testimonials/n-q.png" alt="quickieboost"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.casinoshortlist.org" target="_blank"><img src="land/images/testimonials/n-csl.png" alt="Best Online Casinos"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinosanalyzer.com/online-casinos " target="_blank"><img src="land/images/testimonials/analyzer.png" alt="Casinos analyzer"></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="testimonials">--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.casinobonusesnow.com/" target="_blank"><img src="land/images/testimonials/n-cbn.jpg" alt="casinobonusesnow"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item middle-item">--}}
+{{--                <a href="http://casinowhizz.com" target="_blank"><img src="land/images/testimonials/caswhizzz6.png" alt="casinowhizz"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.allfreechips.com/" target="_blank"><img src="land/images/testimonials/AllFreeChips.png" alt="AllFreeChips"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://sistersitesindex.com/" target="_blank"><img src="land/images/testimonials/SisterSitesIndex.png" alt="SisterSitesIndex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.newbonuses.com/" target="_blank"><img src="land/images/testimonials/seal.png" alt="seal"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinoenlineahex.com/casinos-online/" target="_blank"><img src="land/images/testimonials/casinoenlineahex-logo.svg" alt="casinoenlineahex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinohex.co.za/online-casinos/" target="_blank"><img src="land/images/testimonials/casinohex.png" alt="casinohex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinodeps.co.nz/real-money-casinos/" target="_blank"><img src="land/images/testimonials/nz-casinodeps-logo.png" alt="nz-casinodeps"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item last-row">--}}
+{{--                <a href="http://www.australiancasinoclub.com/" target="_blank"><img src="land/images/testimonials/n-a.png" alt="Best NEw Online Casino Sites"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodepositkings.com/" target="_blank"><img src="land/images/testimonials/ndk-approved.png" alt="ndk-approved"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodeposit.guide/" target="_blank"><img src="land/images/testimonials/nodepositguide.jpg" alt="nodeposit.guide"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodepositworld.com/" target="_blank"><img src="land/images/testimonials/nodepositworld.jpg" alt="nodepositworld.com"></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="testimonials">--}}
+{{--            <div class="item middle-item">--}}
+{{--                <a href="https://www.mobilecasinoparty.com" target="_blank"><img src="land/images/testimonials/MCPLogo.png" alt="MobileCasinoParty"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.letsgambleusa.com/" target="_blank"><img src="land/images/testimonials/lets_gamble_usa-2.png" alt="lets gamble usa"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://casinogurus.com/au/" target="_blank"><img src="land/images/testimonials/top-perfecto-logo.png" alt="casino gurus"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.gambledex.com/" target="_blank"><img src="land/images/testimonials/gambledex.jpg" alt="gambledex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.mapleslot.com/" target="_blank"><img src="land/images/testimonials/MapleSlot.png" alt="MapleSlot"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item">--}}
+{{--                <a href="https://www.allonlinecasinoslist.com/" target="_blank"><img src="land/images/testimonials/allonlinecasinoslist.png" alt="allonlinecasinoslist"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodeposit365.com" target="_blank"><img src="land/images/testimonials/nodeposit365.png" alt="nodeposit365"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.nodepositfan.com" target="_blank"><img src="land/images/testimonials/nodepositfan.jpg" alt="nodepositfan.com"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item">--}}
+{{--                <a href="https://www.auscasinos.com/" target="_blank"><img src="land/images/testimonials/AUScasino.png" alt="AUScasino"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item long-item">--}}
+{{--                <a href="https://www.directoryofslots.com/" target="_blank"><img src="land/images/testimonials/directory_of_slots.png" alt="directory_of_slots"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.wagerdex.com/" target="_blank"><img src="land/images/testimonials/wagerdex.png" alt="wagerdex"></a>--}}
+{{--            </div>--}}
+{{--            <div class="item">--}}
+{{--                <a href="https://www.mindepositcasinos.com/" target="_blank"><img src="land/images/testimonials/mindepositcasinos.png" alt="mindepositcasinos"></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- page 7 -->
     <div class="section" id="section6">
         <div class="contacts-general">
