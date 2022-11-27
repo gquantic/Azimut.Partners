@@ -25,9 +25,21 @@
 {{--                            <span class="color-gold">{{ $offer->award }}$ for CPA</span> or--}}
 {{--                            <span class="color-gold">{{ $offer->percent_award }}% for revshare</span>--}}
 {{--                        </p>--}}
-                        <p style="margin-top: 5px;">
-                            {!! $offer->description !!}
-                        </p>
+
+                        <div class="d-flex mt-3">
+                            <button class="btn btn-warning mr-2" type="button" data-toggle="modal"
+                                    data-target="#cpaModal" style="height: 35px;">
+                                Cpa info
+                            </button>
+                            <button class="btn btn-warning mr-2" type="button" data-toggle="modal"
+                                    data-target="#revshareModal" style="height: 35px;">
+                                RevShare info
+                            </button>
+                            <button class="btn btn-warning" type="button" data-toggle="modal"
+                                    data-target="#offerInformationModal" style="height: 35px;">
+                                Offer information
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,6 +84,57 @@
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cpa modal -->
+    <div class="modal fade" id="cpaModal" tabindex="-1" role="dialog" aria-labelledby="transactionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cpa description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {!! $offer->cpa_description !!}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revshare modal -->
+    <div class="modal fade" id="revshareModal" tabindex="-1" role="dialog" aria-labelledby="transactionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Revshare description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {!! $offer->revshare_description !!}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer info modal -->
+    <div class="modal fade" id="offerInformationModal" tabindex="-1" role="dialog" aria-labelledby="transactionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Offer description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {!! $offer->description !!}
                 </div>
             </div>
         </div>
