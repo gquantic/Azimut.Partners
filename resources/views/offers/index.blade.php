@@ -29,7 +29,15 @@
                 <tbody>
                     @foreach($offers as $offer)
                         <tr>
-                            <td><a href="{{ route('offers.show', $offer->id) }}">{{ $offer->title }}</a></td>
+                            <td style="display: flex;align-items: center;">
+                                <a href="{{ route('offers.show', $offer->id) }}">
+                                    @if ($offer->img != '')
+                                        <img src="{{ $offer->img }}" style="width: 30px !important;" class="mr-2" alt="">
+                                    @endif
+
+                                        {{ $offer->title }}
+                                </a>
+                            </td>
                             <td>10$</td>
                             <td>10% - 50% - ?</td>
                             <td><a class="color-gold text-decoration-none" href="{{ route('offers.show', $offer->id) }}">Go to offer</a></td>
