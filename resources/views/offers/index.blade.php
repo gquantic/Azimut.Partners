@@ -31,7 +31,7 @@
                         <tr>
                             <td><a href="{{ route('offers.show', $offer->id) }}">{{ $offer->title }}</a></td>
                             <td>10$</td>
-                            <td>10% - 45%</td>
+                            <td>10% - 50% - ?</td>
                             <td><a class="color-gold text-decoration-none" href="{{ route('offers.show', $offer->id) }}">Go to offer</a></td>
                         </tr>
                     @endforeach
