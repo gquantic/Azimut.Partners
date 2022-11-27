@@ -1,0 +1,177 @@
+.phpdebugbar {
+    * {
+        color: #000 !important;
+    }
+}
+
+// VARS
+
+$proportional-size: 40px; // The user square size in W & H
+
+$default-bg-path: url("/public/img/ref/default.png");
+$gold-bg-path: url("/public/img/ref/gold.png");
+$platinum-bg-path: url("/public/img/ref/platinum.png");
+
+$level-margin-bottom: 70px;
+
+
+// PEOPLES
+
+.people {
+    width: $proportional-size;
+    height: $proportional-size;
+
+    &:not(.filled) {
+        opacity: .3;
+    }
+
+    .info {
+        position: absolute;
+        margin-left: 47px;
+        margin-top: 45px;
+        background: rgba(0,0,0,.5);
+        padding: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: none;
+    }
+
+    &:hover {
+        .info {
+            display: block;
+        }
+    }
+}
+
+.people-default {
+    background: $default-bg-path;
+    background-size: cover;
+    opacity: 1;
+}
+
+.people-gold {
+    background: $gold-bg-path;
+    background-size: cover;
+    opacity: 1;
+}
+
+.people-platinum {
+    background: $platinum-bg-path;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+// ELEMENTS
+
+.group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+// BRANCHES
+
+.first-level {
+    margin: 15px auto $level-margin-bottom auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.second-level {
+    width: 70%;
+    margin: 0 auto $level-margin-bottom auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-level {
+    width: 100%;
+    margin: 0 auto $level-margin-bottom auto;
+    display: flex;
+    justify-content: space-between;
+
+    .group {
+        width: 400px;
+
+        &:nth-child(1) {
+            margin-left: 15px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.fourth-level {
+    width: 100%;
+    margin: 0 auto $level-margin-bottom auto;
+    display: flex;
+    justify-content: space-between;
+
+    .group {
+        width: 229px;
+
+        &:nth-child(1) {
+            margin-left: -80px;
+        }
+
+        &:nth-child(2) {
+            margin-left: -150px;
+        }
+
+        &:nth-child(3) {
+            margin-right: -140px;
+        }
+
+        &:nth-child(4) {
+            margin-right: -80px;
+        }
+    }
+}
+
+.five-level {
+    width: 100%;
+    margin: 0 auto $level-margin-bottom auto;
+    display: flex;
+    justify-content: space-between;
+
+    .group {
+        width: 100px;
+
+        &:nth-child(1) {
+            margin-left: -110px;
+        }
+
+        &:nth-child(2) {
+            margin-left: -120px;
+        }
+
+        &:nth-child(3) {
+            margin-left: -155px;
+        }
+
+        &:nth-child(4) {
+            margin-left: -105px;
+        }
+
+        &:nth-child(5) {
+            margin-right: -130px;
+        }
+
+        &:nth-child(6) {
+            margin-right: -130px;
+        }
+
+        &:nth-child(7) {
+            margin-right: -120px;
+        }
+
+        &:nth-child(8) {
+            margin-right: -110px;
+        }
+    }
+}

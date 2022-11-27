@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Referrals\DisplayController;
+use App\Http\Controllers\Referrals\GetController;
 use App\Models\Player;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class PlayersController extends Controller
 {
+    protected ?GetController $getController;
+
+    public function __construct(GetController $getController)
+    {
+        $this->getController = new $getController;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -52,10 +61,14 @@ class PlayersController extends Controller
      */
     public function show(Player $player)
     {
+//        dd($this->getController->getPlayers($player));
+        $displayController = new DisplayController($this->getController->getPlayers($player));
+
         return view('players.show', [
             'player' => $player,
             'players' => $player->referrals()->get(),
             'refer' => Player::query()->where('id', $player->referral_id)->first() ?? '',
+            'displayController' => $displayController,
         ]);
     }
 
