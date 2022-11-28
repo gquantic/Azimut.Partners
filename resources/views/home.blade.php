@@ -4,9 +4,20 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div style="height: 200px;width: 100%;background: rgba(0,0,0,.2);display: flex;justify-content: center;
+{{--            <div class="card">--}}
+{{--                <div class="card-body card-body-light">--}}
+                    <canvas id="mainChart"></canvas>
+{{--                </div>--}}
+{{--            </div>--}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div style="height: 200px;width: 100%;background: rgba(0,0,0,.2);display: flex;justify-content: center;flex-direction: column;
             align-items: center;">
-                <h5>BANNER</h5>
+                <img src="{{ asset('img/azimut.svg') }}" alt="" width="100px" style="width: 100px !important;">
+                <h5 style="font-weight: 800;margin-top: 5px;font-size: 15px;">AFFILIATE PROGRAM</h5>
             </div>
         </div>
     </div>
@@ -193,4 +204,57 @@
 {{--        </div>--}}
     </div>
 </div>
+
+<script>
+    const ctx = document.getElementById('mainChart');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [
+                {
+                    label: 'Earned',
+                    data: [
+                        @foreach($earnedChart as $item)
+                        '{{ $item }}',
+                        @endforeach
+                    ],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Players invited',
+                    data: [
+                        @foreach($playersInvited as $item)
+                            '{{ $item }}',
+                        @endforeach
+                    ],
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+    <style>
+        #mainChart {
+            height: 250px !important;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            color: #fff;
+        }
+    </style>
+@endsection
+
+
+@section('scripts')
+
 @endsection

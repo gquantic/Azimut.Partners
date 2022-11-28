@@ -19,6 +19,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Scripts -->
     @vite([
         'resources/sass/app.scss',
@@ -29,7 +31,7 @@
         ])
 </head>
 <body>
-    <div id="app">
+    <div>
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
@@ -193,5 +195,7 @@
             </div>
         </div>
     </div>
+
+    @yield('scripts')
 </body>
 </html>
