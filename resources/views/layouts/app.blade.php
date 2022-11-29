@@ -63,6 +63,7 @@
                             <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
                             <a href="{{ route('streams.index') }}" class="menu-link">Streams</a>
                             <a href="{{ route('links.index') }}" class="menu-link">Links</a>
+                            <a href="{{ route('faq') }}" class="menu-link">FAQ</a>
                             {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                             <a href="/wallet" class="menu-link">Wallet</a>
                         </div>
@@ -127,6 +128,7 @@
                             <a href="{{ route('offers.index') }}" class="menu-link">Offers</a>
                             <a href="{{ route('streams.index') }}" class="menu-link">Streams</a>
                             <a href="{{ route('links.index') }}" class="menu-link">Links</a>
+                            <a href="{{ route('faq') }}" class="menu-link">FAQ</a>
                             {{--                        <a href="/news" class="menu-link">My profile</a>--}}
                             <a href="/wallet" class="menu-link">Wallet</a>
                             <a href="{{ route('logout') }}" class="menu-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

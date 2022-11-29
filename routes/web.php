@@ -73,3 +73,5 @@ Route::get('/controller/{id}', 'App\Http\Controllers\Api\ReferralController@chec
 Route::get('/wallet', function () {
     return view('profile.wallet', ['transactions' => \App\Models\Transaction::where('user_id', \Illuminate\Support\Facades\Auth::id())->get()]);
 })->middleware('auth');
+
+Route::view('faq', 'support.faq')->name('faq');
