@@ -22,11 +22,9 @@
                     </button>
                 </a>
                 <img src="{{ asset('img/azimut.svg') }}" alt="" width="100px" style="width: 100px !important;">
-                <a href="" class="text-decoration-none">
-                    <button class="btn-warning ml-4" style="width: 160px;font-size: 15px;transform: translateY(5px);">
-                        Start earn now
-                    </button>
-                </a>
+                <button type="button" data-toggle="modal" data-target="#howToStartEarningModal" class="btn-warning ml-4" style="width: 160px;font-size: 15px;transform: translateY(5px);">
+                    Start earn now
+                </button>
             </div>
         </div>
     </div>
