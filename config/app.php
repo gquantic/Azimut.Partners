@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+    'enable_metrika' => env('METRIKA', 'false'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

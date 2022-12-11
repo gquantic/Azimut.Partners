@@ -29,6 +29,26 @@
         'resources/js/app.js',
         'resources/js/scripts.js'
         ])
+
+    @if (config('app.enable_metrika') === true)
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(91631640, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/91631640" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    @endif
 </head>
 <body>
     <div>
@@ -193,6 +213,28 @@
                             </tr>
                         @endforeach
                     </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to start earning modal -->
+    <div class="modal fade" id="howToStartEarningModal" tabindex="-1" role="dialog" aria-labelledby="howToStartEarningModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How to start earning?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>1. To start, create a stream in the <a href="{{ route('streams.create') }}" class="color-gold">section</a>.</p>
+                    <p class="mb-0">2. The second step - <a href="{{ route('offers.index') }}" class="color-gold">go to the offer</a> and create a link
+                        in the the form by selecting the previously created stream.</p>
+                    <small class="text-muted mt-0 mb-2">At this step you have to choose the type of CPA or RevShare. We recommend starting with RevShare.</small>
+                    <p class="mt-2">3. Go to the <a href="{{ route('links.index') }}" class="color-gold">links page</a> and open created link. Copy link and share it.</p>
+                    <p><b>Ready! For each selected action, you will receive a reward. Good earnings!</b></p>
                 </div>
             </div>
         </div>

@@ -193,3 +193,24 @@ thead, tbody, tfoot, tr, td, th {
     border-color: rgba($color-gold, 100%);
     border-style: dashed;
 }
+
+.btn-animated {
+    animation: btn-animated 2s ease-in-out infinite;
+}
+
+@keyframes btn-animated {
+    0% {
+        transform: scale(1);
+        background: #ffd862;
+    }
+
+    50%{
+        transform: scale(.90);
+        background: #ffc107;
+    }
+
+    100%{
+        transform: scale(1);
+        background: #ffd862;
+    }
+}

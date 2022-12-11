@@ -17,6 +17,11 @@
 {{--                    </div>--}}
 {{--                </div>--}}
 {{--            @endforeach--}}
+            <div class="col-12 d-flex justify-content-end">
+                <a type="button" data-toggle="modal" data-target="#howToStartEarningModal" class="btn btn-warning text-black btn-animated">
+                    How to start earning?
+                </a>
+            </div>
             <table class="table">
                 <thead>
                     <tr>

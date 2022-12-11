@@ -14,10 +14,19 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div style="height: 200px;width: 100%;background: rgba(0,0,0,.2);display: flex;justify-content: center;flex-direction: column;
-            align-items: center;">
+            <div style="height: 200px;width: 100%;background: rgba(0,0,0,.2);display: flex;justify-content: center;flex-direction: row;
+            align-items: center;justify-content: center;">
+                <a href="" class="text-decoration-none">
+                    <button class="btn-warning mr-4" style="width: 160px;font-size: 15px;transform: translateY(5px);">
+                        Leaderboard
+                    </button>
+                </a>
                 <img src="{{ asset('img/azimut.svg') }}" alt="" width="100px" style="width: 100px !important;">
-                <h5 style="font-weight: 800;margin-top: 5px;font-size: 15px;">AFFILIATE PROGRAM</h5>
+                <a href="" class="text-decoration-none">
+                    <button class="btn-warning ml-4" style="width: 160px;font-size: 15px;transform: translateY(5px);">
+                        Start earn now
+                    </button>
+                </a>
             </div>
         </div>
     </div>
