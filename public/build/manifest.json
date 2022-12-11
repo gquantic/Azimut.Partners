@@ -1,8 +1,4 @@
 {
-  "public/img/ref/gold.png": {
-    "file": "assets/gold.4bda202c.png",
-    "src": "public/img/ref/gold.png"
-  },
   "public/img/ref/platinum.png": {
     "file": "assets/platinum.ebbe34a3.png",
     "src": "public/img/ref/platinum.png"
@@ -10,6 +6,10 @@
   "public/img/ref/default.png": {
     "file": "assets/default.e434a344.png",
     "src": "public/img/ref/default.png"
+  },
+  "public/img/ref/gold.png": {
+    "file": "assets/gold.4bda202c.png",
+    "src": "public/img/ref/gold.png"
   },
   "resources/js/app.js": {
     "file": "assets/app.287d8762.js",
@@ -21,14 +21,14 @@
     "src": "resources/js/scripts.js",
     "isEntry": true
   },
+  "resources/sass/styles.scss": {
+    "file": "assets/styles.0cf17b89.css",
+    "src": "resources/sass/styles.scss",
+    "isEntry": true
+  },
   "resources/sass/ref.scss": {
     "file": "assets/ref.92742b4a.css",
     "src": "resources/sass/ref.scss",
-    "isEntry": true
-  },
-  "resources/sass/styles.scss": {
-    "file": "assets/styles.bd11bdc3.css",
-    "src": "resources/sass/styles.scss",
     "isEntry": true
   },
   "resources/sass/app.scss": {
